@@ -721,9 +721,6 @@ self: super: {
   call = dontDistribute super.call;
   rhythm-game-tutorial = dontDistribute super.rhythm-game-tutorial;
 
-  # https://github.com/haskell/haddock/issues/378
-  haddock-library = dontCheck super.haddock-library;
-
   # Already fixed in upstream darcs repo.
   xmonad-contrib = overrideCabal super.xmonad-contrib (drv: {
     patchPhase = ''
