@@ -800,6 +800,6 @@ self: super: {
   MissingH = dontCheck super.MissingH;
 
   # Obsolete for GHC versions after GHC 6.10.x.
-  utf8-prelude = markBroken utf8-prelude;
+  utf8-prelude = markBroken super.utf8-prelude;
 
 }
