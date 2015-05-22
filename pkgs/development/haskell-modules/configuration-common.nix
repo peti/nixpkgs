@@ -839,4 +839,7 @@ self: super: {
   ghc-parser = markBrokenVersion "0.1.6.0" super.ghc-parser;
   ihaskell-plot = dontDistribute super.ihaskell-plot;
 
+  # https://github.com/hvr/token-bucket/issues/3
+  token-bucket = dontCheck super.token-bucket;
+
 }
