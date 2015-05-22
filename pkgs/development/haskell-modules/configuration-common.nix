@@ -835,4 +835,8 @@ self: super: {
   # This needs the latest version of errors to compile.
   pipes-errors_0_3 = super.pipes-errors_0_3.override { errors = self.errors_2_0_0; };
 
+  # https://github.com/gibiansky/IHaskell/issues/494
+  ghc-parser = markBrokenVersion "0.1.6.0" super.ghc-parser;
+  ihaskell-plot = dontDistribute super.ihaskell-plot;
+
 }
