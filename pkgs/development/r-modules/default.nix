@@ -7,12 +7,12 @@ let
 
   buildRPackage = pkgs.callPackage ./generic-builder.nix { inherit R; };
 
-  # Package template
+  # Generates package templates given per-repository settings
   #
   # some packages, e.g. cncaGUI, require X running while installation,
   # so that we use xvfb-run if requireX is true.
-  derive = lib.makeOverridable ({
-        name, version, type, sha256,
+  mkDerive = {mkHomepage, mkUrls}: lib.makeOverridable ({
+        name, version, sha256,
         depends ? [],
         doCheck ? true,
         requireX ? false,
@@ -22,21 +22,31 @@ let
     name = "${name}-${version}";
     src = fetchurl {
       inherit sha256;
-      urls = if type == "bioc"
-        then [ "mirror://bioc/src/contrib/${name}_${version}.tar.gz" ]
-        else [
-          "mirror://cran/src/contrib/${name}_${version}.tar.gz"
-          "mirror://cran/src/contrib/00Archive/${name}/${name}_${version}.tar.gz"
-        ];
+      urls = mkUrls { inherit name version; };
     };
     inherit doCheck requireX;
     propagatedBuildInputs = depends;
     nativeBuildInputs = depends;
-    meta.homepage = "http://cran.r-project.org/web/packages/${name}/"; # TODO add bioconductor?
+    meta.homepage = mkHomepage name;
     meta.platforms = R.meta.platforms;
     meta.hydraPlatforms = hydraPlatforms;
     meta.broken = broken;
   });
+
+  # Templates for generating Bioconductor and CRAN packages
+  # from the name, version, sha256, and optional per-package arguments above
+  #
+  deriveBioc = mkDerive {
+    mkHomepage = name: "http://cran.r-project.org/web/packages/${name}/";
+    mkUrls = {name, version}: [ "mirror://bioc/src/contrib/${name}_${version}.tar.gz" ];
+  };
+  deriveCran = mkDerive {
+    mkHomepage = name: "http://bioconductor.org/packages/release/bioc/html/${name}.html";
+    mkUrls = {name, version}: [
+      "mirror://cran/src/contrib/${name}_${version}.tar.gz"
+      "mirror://cran/src/contrib/00Archive/${name}/${name}_${version}.tar.gz"
+    ];
+  };
 
   # Overrides package definitions with nativeBuildInputs.
   # For example,
@@ -195,7 +205,8 @@ let
   # `self` is `_self` with overridden packages;
   # packages in `_self` may depends on overridden packages.
   self = (defaultOverrides _self self) // overrides;
-  _self = import ./r-packages.nix { inherit self derive; };
+  _self = import ./cran-packages.nix { inherit self; derive = deriveCran; }
+       // import ./bioc-packages.nix { inherit self; derive = deriveBioc; };
 
   # tweaks for the individual packages and "in self" follow
 
@@ -735,6 +746,13 @@ let
   ];
 
   otherOverrides = old: new: {
+    xml2 = old.xml2.overrideDerivation (attrs: {
+      preConfigure = ''
+        export LIBXML_INCDIR=${pkgs.libxml2}/include/libxml2
+        export LIBXML_LIBDIR=${pkgs.libxml2}/lib
+      '';
+    });
+
     curl = old.curl.overrideDerivation (attrs: {
       preConfigure = "export CURL_INCLUDES=${pkgs.curl}/include/curl";
     });
