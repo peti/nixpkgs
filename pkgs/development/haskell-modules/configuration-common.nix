@@ -32,7 +32,7 @@ self: super: {
   hslua = super.hslua.override { lua = pkgs.lua5_1; };
 
   # Use the default version of mysql to build this package (which is actually mariadb).
-  mysql = super.mysql.override { mysql = pkgs.mysql.lib; };
+  mysql = addExtraLibrary super.mysql pkgs.mysql.lib;
 
   # Please also remove optparse-applicative special case from
   # cabal2nix/hackage2nix.hs when removing the following.
@@ -632,12 +632,13 @@ self: super: {
   asn1-encoding = dontCheck super.asn1-encoding;
 
   # wxc needs help deciding which version of GTK to use.
-  wxc = overrideCabal (super.wxc.override { wxGTK = pkgs.wxGTK29; }) (drv: {
+  wxc = overrideCabal super.wxc (drv: {
     patches = [ ./wxc-no-ldconfig.patch ];
     doHaddock = false;
     postInstall = "cp -v dist/build/libwxc.so.${drv.version} $out/lib/libwxc.so";
+    librarySystemDepends = drv.librarySystemDepends or [] ++ [pkgs.wxGTK29];
   });
-  wxcore = super.wxcore.override { wxGTK = pkgs.wxGTK29; };
+  wxcore = addExtraLibrary super.wxcore pkgs.wxGTK29;
 
   # Depends on QuickCheck 1.x.
   HaVSA = super.HaVSA.override { QuickCheck = self.QuickCheck_1_2_0_1; };
