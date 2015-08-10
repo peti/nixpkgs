@@ -926,4 +926,8 @@ self: super: {
   # https://github.com/liyang/thyme/issues/36
   thyme = dontCheck super.thyme;
 
+  # https://github.com/k0ral/hbro/issues/15
+  hbro = markBroken super.hbro;
+  hbro-contrib = dontDistribute super.hbro-contrib;
+
 }
