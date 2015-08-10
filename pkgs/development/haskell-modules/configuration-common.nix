@@ -930,4 +930,7 @@ self: super: {
   hbro = markBroken super.hbro;
   hbro-contrib = dontDistribute super.hbro-contrib;
 
+  # https://github.com/aka-bash0r/multi-cabal/issues/4
+  multi-cabal = markBroken super.multi-cabal;
+
 }
