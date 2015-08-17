@@ -926,9 +926,6 @@ self: super: {
   # https://github.com/athanclark/commutative/issues/1
   commutative = dontCheck super.commutative;
 
-  # https://github.com/athanclark/set-with/issues/1
-  set-with = dontCheck super.set-with;
-
   # https://github.com/yi-editor/yi/issues/777
   yi = markBroken super.yi;
   yi-monokai = dontDistribute super.yi-monokai;
