@@ -8365,6 +8365,9 @@ self: super: {
   "wai-logger-prefork" = dontDistribute super."wai-logger-prefork";
   "wai-middleware-cache" = dontDistribute super."wai-middleware-cache";
   "wai-middleware-cache-redis" = dontDistribute super."wai-middleware-cache-redis";
+  "wai-middleware-caching" = dontDistribute super."wai-middleware-caching";
+  "wai-middleware-caching-lru" = dontDistribute super."wai-middleware-caching-lru";
+  "wai-middleware-caching-redis" = dontDistribute super."wai-middleware-caching-redis";
   "wai-middleware-catch" = dontDistribute super."wai-middleware-catch";
   "wai-middleware-consul" = dontDistribute super."wai-middleware-consul";
   "wai-middleware-content-type" = dontDistribute super."wai-middleware-content-type";
