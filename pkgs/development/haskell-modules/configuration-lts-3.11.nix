@@ -2386,6 +2386,7 @@ self: super: {
   "dequeue" = dontDistribute super."dequeue";
   "derangement" = dontDistribute super."derangement";
   "derivation-trees" = dontDistribute super."derivation-trees";
+  "derive" = doDistribute super."derive_2_5_22";
   "derive-IG" = dontDistribute super."derive-IG";
   "derive-enumerable" = dontDistribute super."derive-enumerable";
   "derive-gadt" = dontDistribute super."derive-gadt";
@@ -2793,6 +2794,7 @@ self: super: {
   "fastedit" = dontDistribute super."fastedit";
   "fastirc" = dontDistribute super."fastirc";
   "fault-tree" = dontDistribute super."fault-tree";
+  "fay" = doDistribute super."fay_0_23_1_8";
   "fay-geoposition" = dontDistribute super."fay-geoposition";
   "fay-hsx" = dontDistribute super."fay-hsx";
   "fay-ref" = dontDistribute super."fay-ref";
@@ -3632,6 +3634,7 @@ self: super: {
   "haskell-read-editor" = dontDistribute super."haskell-read-editor";
   "haskell-reflect" = dontDistribute super."haskell-reflect";
   "haskell-rules" = dontDistribute super."haskell-rules";
+  "haskell-src-exts" = doDistribute super."haskell-src-exts_1_16_0_1";
   "haskell-src-exts-qq" = dontDistribute super."haskell-src-exts-qq";
   "haskell-src-meta" = doDistribute super."haskell-src-meta_0_6_0_11";
   "haskell-src-meta-mwotton" = dontDistribute super."haskell-src-meta-mwotton";
@@ -6790,6 +6793,7 @@ self: super: {
   "sound-collage" = dontDistribute super."sound-collage";
   "sounddelay" = dontDistribute super."sounddelay";
   "source-code-server" = dontDistribute super."source-code-server";
+  "sourcemap" = doDistribute super."sourcemap_0_1_3_0";
   "sousit" = dontDistribute super."sousit";
   "sox" = dontDistribute super."sox";
   "soxlib" = dontDistribute super."soxlib";
@@ -6904,6 +6908,7 @@ self: super: {
   "stitch" = dontDistribute super."stitch";
   "stm-channelize" = dontDistribute super."stm-channelize";
   "stm-chunked-queues" = dontDistribute super."stm-chunked-queues";
+  "stm-conduit" = doDistribute super."stm-conduit_2_6_1";
   "stm-firehose" = dontDistribute super."stm-firehose";
   "stm-io-hooks" = dontDistribute super."stm-io-hooks";
   "stm-lifted" = dontDistribute super."stm-lifted";
@@ -6970,6 +6975,7 @@ self: super: {
   "structures" = dontDistribute super."structures";
   "stunclient" = dontDistribute super."stunclient";
   "stunts" = dontDistribute super."stunts";
+  "stylish-haskell" = doDistribute super."stylish-haskell_0_5_14_3";
   "stylized" = dontDistribute super."stylized";
   "sub-state" = dontDistribute super."sub-state";
   "subhask" = dontDistribute super."subhask";
@@ -7703,6 +7709,7 @@ self: super: {
   "wai-middleware-caching-redis" = dontDistribute super."wai-middleware-caching-redis";
   "wai-middleware-catch" = dontDistribute super."wai-middleware-catch";
   "wai-middleware-content-type" = dontDistribute super."wai-middleware-content-type";
+  "wai-middleware-crowd" = doDistribute super."wai-middleware-crowd_0_1_2_1";
   "wai-middleware-etag" = dontDistribute super."wai-middleware-etag";
   "wai-middleware-gunzip" = dontDistribute super."wai-middleware-gunzip";
   "wai-middleware-headers" = dontDistribute super."wai-middleware-headers";

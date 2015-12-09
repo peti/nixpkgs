@@ -2510,6 +2510,7 @@ self: super: {
   "dequeue" = dontDistribute super."dequeue";
   "derangement" = dontDistribute super."derangement";
   "derivation-trees" = dontDistribute super."derivation-trees";
+  "derive" = doDistribute super."derive_2_5_22";
   "derive-IG" = dontDistribute super."derive-IG";
   "derive-enumerable" = dontDistribute super."derive-enumerable";
   "derive-gadt" = dontDistribute super."derive-gadt";
@@ -3833,6 +3834,7 @@ self: super: {
   "haskell-reflect" = dontDistribute super."haskell-reflect";
   "haskell-rules" = dontDistribute super."haskell-rules";
   "haskell-spacegoo" = dontDistribute super."haskell-spacegoo";
+  "haskell-src-exts" = doDistribute super."haskell-src-exts_1_16_0_1";
   "haskell-src-exts-qq" = dontDistribute super."haskell-src-exts-qq";
   "haskell-src-meta" = doDistribute super."haskell-src-meta_0_6_0_10";
   "haskell-src-meta-mwotton" = dontDistribute super."haskell-src-meta-mwotton";
@@ -7184,6 +7186,7 @@ self: super: {
   "sound-collage" = dontDistribute super."sound-collage";
   "sounddelay" = dontDistribute super."sounddelay";
   "source-code-server" = dontDistribute super."source-code-server";
+  "sourcemap" = doDistribute super."sourcemap_0_1_3_0";
   "sousit" = dontDistribute super."sousit";
   "sox" = dontDistribute super."sox";
   "soxlib" = dontDistribute super."soxlib";
