@@ -3213,6 +3213,7 @@ self: super: {
   "gnome-desktop" = dontDistribute super."gnome-desktop";
   "gnome-keyring" = dontDistribute super."gnome-keyring";
   "gnomevfs" = dontDistribute super."gnomevfs";
+  "gnss-converters" = dontDistribute super."gnss-converters";
   "gnuplot" = dontDistribute super."gnuplot";
   "goa" = dontDistribute super."goa";
   "goatee" = dontDistribute super."goatee";

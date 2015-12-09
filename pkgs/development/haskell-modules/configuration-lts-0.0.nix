@@ -3510,6 +3510,7 @@ self: super: {
   "gnome-desktop" = dontDistribute super."gnome-desktop";
   "gnome-keyring" = dontDistribute super."gnome-keyring";
   "gnomevfs" = dontDistribute super."gnomevfs";
+  "gnss-converters" = dontDistribute super."gnss-converters";
   "gnuidn" = dontDistribute super."gnuidn";
   "gnuplot" = dontDistribute super."gnuplot";
   "gnutls" = dontDistribute super."gnutls";

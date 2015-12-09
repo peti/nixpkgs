@@ -3222,6 +3222,7 @@ self: super: {
   "gnome-desktop" = dontDistribute super."gnome-desktop";
   "gnome-keyring" = dontDistribute super."gnome-keyring";
   "gnomevfs" = dontDistribute super."gnomevfs";
+  "gnss-converters" = dontDistribute super."gnss-converters";
   "gnuidn" = doDistribute super."gnuidn_0_2_1";
   "gnuplot" = dontDistribute super."gnuplot";
   "goa" = dontDistribute super."goa";
