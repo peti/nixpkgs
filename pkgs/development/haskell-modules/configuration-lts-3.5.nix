@@ -1645,6 +1645,7 @@ self: super: {
   "blunt" = dontDistribute super."blunt";
   "board-games" = dontDistribute super."board-games";
   "bogre-banana" = dontDistribute super."bogre-banana";
+  "bond" = dontDistribute super."bond";
   "boolean-list" = dontDistribute super."boolean-list";
   "boolean-normal-forms" = dontDistribute super."boolean-normal-forms";
   "boolexpr" = dontDistribute super."boolexpr";
