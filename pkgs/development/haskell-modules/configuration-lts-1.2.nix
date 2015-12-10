@@ -5350,6 +5350,7 @@ self: super: {
   "logic-TPTP" = dontDistribute super."logic-TPTP";
   "logic-classes" = dontDistribute super."logic-classes";
   "logicst" = dontDistribute super."logicst";
+  "logplex-parse" = dontDistribute super."logplex-parse";
   "logsink" = dontDistribute super."logsink";
   "lojban" = dontDistribute super."lojban";
   "lojbanParser" = dontDistribute super."lojbanParser";
@@ -7523,6 +7524,7 @@ self: super: {
   "statistics-hypergeometric-genvar" = dontDistribute super."statistics-hypergeometric-genvar";
   "stats" = dontDistribute super."stats";
   "statsd" = dontDistribute super."statsd";
+  "statsd-client" = dontDistribute super."statsd-client";
   "statsd-datadog" = dontDistribute super."statsd-datadog";
   "statvfs" = dontDistribute super."statvfs";
   "stb-image" = dontDistribute super."stb-image";
