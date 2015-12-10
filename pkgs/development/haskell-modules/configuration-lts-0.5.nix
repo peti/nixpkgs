@@ -6381,6 +6381,7 @@ self: super: {
   "plat" = dontDistribute super."plat";
   "playlists" = dontDistribute super."playlists";
   "plist" = dontDistribute super."plist";
+  "plist-buddy" = dontDistribute super."plist-buddy";
   "plivo" = dontDistribute super."plivo";
   "plot" = dontDistribute super."plot";
   "plot-gtk" = dontDistribute super."plot-gtk";
