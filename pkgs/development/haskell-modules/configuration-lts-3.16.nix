@@ -3493,6 +3493,7 @@ self: super: {
   "hakyll-elm" = dontDistribute super."hakyll-elm";
   "hakyll-sass" = dontDistribute super."hakyll-sass";
   "halberd" = dontDistribute super."halberd";
+  "half" = doDistribute super."half_0_2_2_1";
   "halfs" = dontDistribute super."halfs";
   "halipeto" = dontDistribute super."halipeto";
   "halive" = dontDistribute super."halive";
