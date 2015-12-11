@@ -8064,6 +8064,7 @@ self: super: {
   "type-booleans" = dontDistribute super."type-booleans";
   "type-cereal" = dontDistribute super."type-cereal";
   "type-combinators" = dontDistribute super."type-combinators";
+  "type-combinators-quote" = dontDistribute super."type-combinators-quote";
   "type-digits" = dontDistribute super."type-digits";
   "type-eq" = doDistribute super."type-eq_0_4_2";
   "type-equality" = dontDistribute super."type-equality";
