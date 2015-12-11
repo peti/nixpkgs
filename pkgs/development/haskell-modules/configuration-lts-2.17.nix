@@ -2613,6 +2613,7 @@ self: super: {
   "disjoint-sets-st" = dontDistribute super."disjoint-sets-st";
   "disk-free-space" = dontDistribute super."disk-free-space";
   "dist-upload" = dontDistribute super."dist-upload";
+  "distributed-closure" = dontDistribute super."distributed-closure";
   "distributed-process" = doDistribute super."distributed-process_0_5_4";
   "distributed-process-async" = doDistribute super."distributed-process-async_0_2_1";
   "distributed-process-azure" = dontDistribute super."distributed-process-azure";

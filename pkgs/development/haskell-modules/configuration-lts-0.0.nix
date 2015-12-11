@@ -2686,6 +2686,7 @@ self: super: {
   "disjoint-sets-st" = dontDistribute super."disjoint-sets-st";
   "disk-free-space" = dontDistribute super."disk-free-space";
   "dist-upload" = dontDistribute super."dist-upload";
+  "distributed-closure" = dontDistribute super."distributed-closure";
   "distributed-process" = doDistribute super."distributed-process_0_5_2";
   "distributed-process-async" = dontDistribute super."distributed-process-async";
   "distributed-process-azure" = dontDistribute super."distributed-process-azure";
