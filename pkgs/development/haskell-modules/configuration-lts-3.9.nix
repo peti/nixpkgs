@@ -7315,6 +7315,7 @@ self: super: {
   "timeconsole" = dontDistribute super."timeconsole";
   "timeless" = dontDistribute super."timeless";
   "timelike" = dontDistribute super."timelike";
+  "timelike-time" = dontDistribute super."timelike-time";
   "timemap" = dontDistribute super."timemap";
   "timeout" = dontDistribute super."timeout";
   "timeout-control" = dontDistribute super."timeout-control";
