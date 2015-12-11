@@ -3539,6 +3539,7 @@ self: super: {
   "hans" = dontDistribute super."hans";
   "hans-pcap" = dontDistribute super."hans-pcap";
   "hans-pfq" = dontDistribute super."hans-pfq";
+  "haphviz" = dontDistribute super."haphviz";
   "hapistrano" = dontDistribute super."hapistrano";
   "happindicator" = dontDistribute super."happindicator";
   "happindicator3" = dontDistribute super."happindicator3";

@@ -3534,6 +3534,7 @@ self: super: {
   "hans" = dontDistribute super."hans";
   "hans-pcap" = dontDistribute super."hans-pcap";
   "hans-pfq" = dontDistribute super."hans-pfq";
+  "haphviz" = dontDistribute super."haphviz";
   "hapistrano" = dontDistribute super."hapistrano";
   "happindicator" = dontDistribute super."happindicator";
   "happindicator3" = dontDistribute super."happindicator3";
@@ -4242,6 +4243,7 @@ self: super: {
   "htsn-common" = dontDistribute super."htsn-common";
   "htsn-import" = dontDistribute super."htsn-import";
   "http-accept" = dontDistribute super."http-accept";
+  "http-api-data" = doDistribute super."http-api-data_0_2_1";
   "http-attoparsec" = dontDistribute super."http-attoparsec";
   "http-client-auth" = dontDistribute super."http-client-auth";
   "http-client-conduit" = dontDistribute super."http-client-conduit";
