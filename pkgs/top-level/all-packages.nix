@@ -568,6 +568,7 @@ let
 
   asymptote = callPackage ../tools/graphics/asymptote {
     texLive = texlive.combine { inherit (texlive) scheme-small epsf cm-super; };
+    gsl = gsl_1;
   };
 
   atomicparsley = callPackage ../tools/video/atomicparsley { };
@@ -576,7 +577,7 @@ let
 
   avfs = callPackage ../tools/filesystems/avfs { };
 
-  awscli = callPackage ../tools/admin/awscli { };
+  awscli = pythonPackages.awscli;
 
   ec2_api_tools = callPackage ../tools/virtualization/ec2-api-tools { };
 
@@ -2015,7 +2016,7 @@ let
 
   kpcli = callPackage ../tools/security/kpcli { };
 
-  kst = callPackage ../tools/graphics/kst { };
+  kst = callPackage ../tools/graphics/kst { gsl = gsl_1; };
 
   leocad = callPackage ../applications/graphics/leocad { };
 
@@ -2631,8 +2632,10 @@ let
   parted = callPackage ../tools/misc/parted { hurd = null; };
 
   pitivi = callPackage ../applications/video/pitivi {
-    gst = gst_all_1;
-    clutter-gtk = clutter_gtk;
+    gst = gst_all_1 //
+      { gst-plugins-bad = gst_all_1.gst-plugins-bad.overrideDerivation
+          (attrs: { nativeBuildInputs = attrs.nativeBuildInputs ++ [ gtk3 ]; });
+      };
   };
 
   p0f = callPackage ../tools/security/p0f { };
@@ -2809,7 +2812,7 @@ let
 
   pyatspi = callPackage ../development/python-modules/pyatspi { };
 
-  pycangjie = callPackage ../development/python-modules/pycangjie { };
+  pycangjie = pythonPackages.pycangjie;
 
   pydb = callPackage ../development/tools/pydb { };
 
@@ -2817,7 +2820,7 @@ let
 
   pythonDBus = dbus_python;
 
-  pythonIRClib = callPackage ../development/python-modules/irclib { };
+  pythonIRClib = pythonPackages.pythonIRClib;
 
   pythonSexy = builderDefsPackage (callPackage ../development/python-modules/libsexy) { };
 
@@ -3634,7 +3637,7 @@ let
 
   xmltv = callPackage ../tools/misc/xmltv { };
 
-  xmpppy = callPackage ../development/python-modules/xmpppy { };
+  xmpppy = pythonPackages.xmpppy;
 
   xorriso = callPackage ../tools/cd-dvd/xorriso { };
 
@@ -5378,9 +5381,9 @@ let
 
   augeas = callPackage ../tools/system/augeas { };
 
-  ansible = callPackage ../tools/system/ansible { };
+  ansible = pythonPackages.ansible;
 
-  ansible2 = callPackage ../tools/system/ansible/2.nix { };
+  ansible2 = pythonPackages.ansible2;
 
   antlr = callPackage ../development/tools/parsing/antlr/2.7.7.nix { };
 
@@ -6247,9 +6250,7 @@ let
   dbus_cplusplus  = callPackage ../development/libraries/dbus-cplusplus { };
   dbus_glib       = callPackage ../development/libraries/dbus-glib { };
   dbus_java       = callPackage ../development/libraries/java/dbus-java { };
-  dbus_python     = callPackage ../development/python-modules/dbus {
-    isPyPy = python.executable == "pypy";
-  };
+  dbus_python     = pythonPackages.dbus;
 
   # Should we deprecate these? Currently there are many references.
   dbus_tools = pkgs.dbus.tools;
@@ -6545,7 +6546,7 @@ let
   gperftools = callPackage ../development/libraries/gperftools { };
 
   gst_all_1 = recurseIntoAttrs(callPackage ../development/libraries/gstreamer {
-    callPackage = pkgs.newScope (pkgs // { inherit (pkgs) libav; });
+    callPackage = pkgs.newScope (pkgs // { libav = pkgs.ffmpeg; });
   });
 
   gst_all = {
@@ -6618,6 +6619,8 @@ let
   gsasl = callPackage ../development/libraries/gsasl { };
 
   gsl = callPackage ../development/libraries/gsl { };
+
+  gsl_1 = callPackage ../development/libraries/gsl/gsl-1_16.nix { };
 
   gsm = callPackage ../development/libraries/gsm {};
 
@@ -7869,7 +7872,7 @@ let
 
   muparser = callPackage ../development/libraries/muparser { };
 
-  mygpoclient = callPackage ../development/python-modules/mygpoclient { };
+  mygpoclient = pythonPackages.mygpoclient;
 
   mygui = callPackage ../development/libraries/mygui {};
 
@@ -9008,15 +9011,11 @@ let
     self = pypyPackages;
   });
 
-  foursuite = callPackage ../development/python-modules/4suite { };
+  foursuite = pythonPackages.foursuite;
 
-  bsddb3 = callPackage ../development/python-modules/bsddb3 { };
+  bsddb3 = pythonPackages.bsddb3;
 
-  ecdsa = callPackage ../development/python-modules/ecdsa { };
-
-  numeric = callPackage ../development/python-modules/numeric { };
-
-  psyco = callPackage ../development/python-modules/psyco { };
+  ecdsa = pythonPackages.ecdsa;
 
   pycairo = pythonPackages.pycairo;
 
@@ -9024,11 +9023,11 @@ let
 
   pycrypto = pythonPackages.pycrypto;
 
-  pycups = callPackage ../development/python-modules/pycups { };
+  pycups = pythonPackages.pycups;
 
   pyexiv2 = callPackage ../development/python-modules/pyexiv2 { };
 
-  pygame = callPackage ../development/python-modules/pygame { };
+  pygame = pythonPackages.pygame;
 
   pygobject = pythonPackages.pygobject;
 
@@ -9036,7 +9035,7 @@ let
 
   pygtk = pythonPackages.pygtk;
 
-  pygtksourceview = callPackage ../development/python-modules/pygtksourceview { };
+  pygtksourceview = pythonPackages.pygtksourceview;
 
   pyGtkGlade = pythonPackages.pyGtkGlade;
 
@@ -9046,27 +9045,25 @@ let
 
   rhpl = callPackage ../development/python-modules/rhpl { };
 
-  pyqt4 = callPackage ../development/python-modules/pyqt/4.x.nix { };
+  pyqt4 = pythonPackages.pyqt4;
 
-  pysideApiextractor = callPackage ../development/python-modules/pyside/apiextractor.nix { };
+  pysideApiextractor = pythonPackages.pysideApiextractor;
 
-  pysideGeneratorrunner = callPackage ../development/python-modules/pyside/generatorrunner.nix { };
+  pysideGeneratorrunner = pythonPackages.pysideGeneratorrunner;
 
-  pyside = callPackage ../development/python-modules/pyside { };
+  pyside = pythonPackages.pyside;
 
-  pysideTools = callPackage ../development/python-modules/pyside/tools.nix { };
+  pysideTools = pythonPackages.pysideTools;
 
-  pysideShiboken = callPackage ../development/python-modules/pyside/shiboken.nix { };
-
-  pyx = callPackage ../development/python-modules/pyx { };
+  pysideShiboken = pythonPackages.pysideShiboken;
 
   pyxml = callPackage ../development/python-modules/pyxml { };
 
-  rbtools = callPackage ../development/python-modules/rbtools { };
+  rbtools = pythonPackages.rbtools;
 
   setuptools = pythonPackages.setuptools;
 
-  slowaes = callPackage ../development/python-modules/slowaes { };
+  slowaes = pythonPackages.slowaes;
 
   wxPython = pythonPackages.wxPython;
   wxPython28 = pythonPackages.wxPython28;
@@ -12084,6 +12081,8 @@ let
     xcb-util-cursor = if stdenv.isDarwin then xcb-util-cursor-HEAD else xcb-util-cursor;
   };
 
+  i3blocks = callPackage ../applications/window-managers/i3/blocks.nix { };
+
   i3lock = callPackage ../applications/window-managers/i3/lock.nix {
     cairo = cairo.override { xcbSupport = true; };
   };
@@ -12711,7 +12710,7 @@ let
 
   opusTools = callPackage ../applications/audio/opus-tools { };
 
-  orpie = callPackage ../applications/misc/orpie { };
+  orpie = callPackage ../applications/misc/orpie { gsl = gsl_1; };
 
   osmo = callPackage ../applications/office/osmo { };
 
@@ -13115,7 +13114,9 @@ let
 
   printrun = callPackage ../applications/misc/printrun { };
 
-  sddm = qt5Libs.callPackage ../applications/display-managers/sddm { };
+  sddm = qt5Libs.callPackage ../applications/display-managers/sddm {
+    themes = [];  # extra themes, etc.
+  };
 
   slim = callPackage ../applications/display-managers/slim {
     libpng = libpng12;
@@ -13956,8 +13957,6 @@ let
   btanks = callPackage ../games/btanks { };
 
   bzflag = callPackage ../games/bzflag { };
-
-  castle_combat = callPackage ../games/castle-combat { };
 
   cataclysm-dda = callPackage ../games/cataclysm-dda { };
 
