@@ -5454,13 +5454,13 @@ in modules // {
 
   netcdf4 = buildPythonPackage rec {
     name = "netCDF4-${version}";
-    version = "1.1.8";
+    version = "1.2.1";
 
     disabled = isPyPy;
 
     src = pkgs.fetchurl {
       url = "https://pypi.python.org/packages/source/n/netCDF4/${name}.tar.gz";
-      sha256 = "0y6s8g82rbij0brh9hz3aapyyq6apj8fpmhhlyibz1354as7rjq1";
+      sha256 = "0wzg73zyjjhns4209vrcvh71gs392d16ynz76x3pl1xg2by723iy";
     };
 
     propagatedBuildInputs = with self ; [
@@ -5472,13 +5472,12 @@ in modules // {
       pkgs.libjpeg
     ];
 
-    patchPhase = ''
-      export USE_NCCONFIG=0
-      export HDF5_DIR="${pkgs.hdf5}"
-      export NETCDF4_DIR="${pkgs.netcdf}"
-      export CURL_DIR="${pkgs.curl}"
-      export JPEG_DIR="${pkgs.libjpeg}"
-    '';
+    # Variables used to configure the build process
+    USE_NCCONFIG="0";
+    HDF5_DIR="${pkgs.hdf5}";
+    NETCDF4_DIR="${pkgs.netcdf}";
+    CURL_DIR="${pkgs.curl}";
+    JPEG_DIR="${pkgs.libjpeg}";
 
     meta = {
       description = "interface to netCDF library (versions 3 and 4)";
@@ -13695,7 +13694,7 @@ in modules // {
 
     src = pkgs.fetchurl {
       url = "https://pypi.python.org/packages/source/p/praw/${name}.zip";
-      sha256 = "1dilb3vr5llqy344i6nh7gl07wcssb5dmqrhjwhfqi1mais7b953";
+      sha256 = "17s8s4a1yk9rq21f3kmj9k4dbgvfa3650l8b39nhwybvxl3j5nfv";
     };
 
     propagatedBuildInputs = with self; [
@@ -14541,6 +14540,38 @@ in modules // {
     meta = {
       homepage = "http://home.blarg.net/~steveha/pyfeed.html";
       description = "Tools for syndication feeds";
+    };
+  };
+
+  pyfftw = buildPythonPackage rec {
+    name = "pyfftw-${version}";
+    version = "0.9.2";
+
+    src = pkgs.fetchurl {
+      url = "https://pypi.python.org/packages/source/p/pyFFTW/pyFFTW-${version}.tar.gz";
+      sha256 = "f6bbb6afa93085409ab24885a1a3cdb8909f095a142f4d49e346f2bd1b789074";
+    };
+
+    buildInputs = [ pkgs.fftw pkgs.fftwFloat pkgs.fftwLongDouble];
+
+    propagatedBuildInputs = with self; [ numpy scipy ];
+
+    # Tests cannot import pyfftw. pyfftw works fine though.
+    doCheck = false;
+
+    preConfigure = ''
+      export LDFLAGS="-L${pkgs.fftw}/lib -L${pkgs.fftwFloat}/lib -L${pkgs.fftwLongDouble}/lib"
+      export CFLAGS="-I${pkgs.fftw}/include -I${pkgs.fftwFloat}/include -I${pkgs.fftwLongDouble}/include"
+    '';
+    #+ optionalString isDarwin ''
+    #  export DYLD_LIBRARY_PATH="${pkgs.fftw}/lib"
+    #'';
+
+    meta = {
+      description = "A pythonic wrapper around FFTW, the FFT library, presenting a unified interface for all the supported transforms";
+      homepage = http://hgomersall.github.com/pyFFTW/;
+      license = with licenses; [ bsd2 bsd3 ];
+      maintainer = with maintainers; [ fridh ];
     };
   };
 

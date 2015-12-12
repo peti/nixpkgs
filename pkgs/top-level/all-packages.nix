@@ -1511,6 +1511,8 @@ let
     withGTK = true;
   };
 
+  fontmatrix = callPackage ../applications/graphics/fontmatrix {};
+
   foremost = callPackage ../tools/system/foremost { };
 
   forktty = callPackage ../os-specific/linux/forktty {};
@@ -2870,6 +2872,8 @@ let
 
   read-edid = callPackage ../os-specific/linux/read-edid { };
 
+  redir = callPackage ../tools/networking/redir { };
+
   redmine = callPackage ../applications/version-management/redmine { };
 
   rtmpdump = callPackage ../tools/video/rtmpdump { };
@@ -3492,6 +3496,8 @@ let
   xarchiver = callPackage ../tools/archivers/xarchiver { };
 
   xbrightness = callPackage ../tools/X11/xbrightness { };
+
+  xprintidle-ng = callPackage ../tools/X11/xprintidle-ng {};
 
   xsettingsd = callPackage ../tools/X11/xsettingsd { };
 
@@ -6355,6 +6361,7 @@ let
   fftw = callPackage ../development/libraries/fftw { };
   fftwSinglePrec = fftw.override { precision = "single"; };
   fftwFloat = fftwSinglePrec; # the configure option is just an alias
+  fftwLongDouble = fftw.override { precision = "long-double"; };
 
   filter-audio = callPackage ../development/libraries/filter-audio {};
 
