@@ -211,4 +211,7 @@ self: super: {
   # Re-build this package to fix broken binaries on Hydra.
   math-functions = triggerRebuild super.math-functions 2;
 
+  # Re-build this package to fix broken binaries on Hydra.
+  hlibgit2 = triggerRebuild super.hlibgit2 1;
+
 }
