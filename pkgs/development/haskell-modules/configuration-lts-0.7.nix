@@ -3198,6 +3198,7 @@ self: super: {
   "flowsim" = dontDistribute super."flowsim";
   "fltkhs" = dontDistribute super."fltkhs";
   "fltkhs-fluid-examples" = dontDistribute super."fltkhs-fluid-examples";
+  "fltkhs-hello-world" = dontDistribute super."fltkhs-hello-world";
   "fluent-logger" = dontDistribute super."fluent-logger";
   "fluent-logger-conduit" = dontDistribute super."fluent-logger-conduit";
   "fluidsynth" = dontDistribute super."fluidsynth";
