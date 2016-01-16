@@ -7933,6 +7933,7 @@ self: super: {
   "termination-combinators" = dontDistribute super."termination-combinators";
   "terminfo-hs" = dontDistribute super."terminfo-hs";
   "termplot" = dontDistribute super."termplot";
+  "terntup" = dontDistribute super."terntup";
   "terrahs" = dontDistribute super."terrahs";
   "tersmu" = dontDistribute super."tersmu";
   "test-framework" = doDistribute super."test-framework_0_8_1_0";

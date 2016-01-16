@@ -6786,6 +6786,7 @@ self: super: {
   "terminfo" = doDistribute super."terminfo_0_4_0_2";
   "terminfo-hs" = dontDistribute super."terminfo-hs";
   "termplot" = dontDistribute super."termplot";
+  "terntup" = dontDistribute super."terntup";
   "terrahs" = dontDistribute super."terrahs";
   "tersmu" = dontDistribute super."tersmu";
   "test-framework-doctest" = dontDistribute super."test-framework-doctest";
