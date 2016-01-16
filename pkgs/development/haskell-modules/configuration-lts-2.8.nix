@@ -2947,6 +2947,7 @@ self: super: {
   "exception-mtl" = doDistribute super."exception-mtl_0_3_0_5";
   "exception-transformers" = doDistribute super."exception-transformers_0_3_0_4";
   "exceptional" = dontDistribute super."exceptional";
+  "exceptions" = doDistribute super."exceptions_0_8_0_2";
   "executable-hash" = doDistribute super."executable-hash_0_2_0_0";
   "exhaustive" = dontDistribute super."exhaustive";
   "exherbo-cabal" = dontDistribute super."exherbo-cabal";

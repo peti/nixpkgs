@@ -2928,6 +2928,7 @@ self: super: {
   "exception-mtl" = doDistribute super."exception-mtl_0_3_0_5";
   "exception-transformers" = doDistribute super."exception-transformers_0_3_0_4";
   "exceptional" = dontDistribute super."exceptional";
+  "exceptions" = doDistribute super."exceptions_0_8_0_2";
   "exhaustive" = dontDistribute super."exhaustive";
   "exherbo-cabal" = dontDistribute super."exherbo-cabal";
   "exif" = dontDistribute super."exif";
@@ -3844,6 +3845,7 @@ self: super: {
   "hascat-setup" = dontDistribute super."hascat-setup";
   "hascat-system" = dontDistribute super."hascat-system";
   "hash" = dontDistribute super."hash";
+  "hashable" = doDistribute super."hashable_1_2_3_3";
   "hashable-generics" = dontDistribute super."hashable-generics";
   "hashable-time" = dontDistribute super."hashable-time";
   "hashabler" = dontDistribute super."hashabler";
