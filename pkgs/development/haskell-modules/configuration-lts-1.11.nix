@@ -172,6 +172,7 @@ self: super: {
   "Cartesian" = dontDistribute super."Cartesian";
   "Cascade" = dontDistribute super."Cascade";
   "Catana" = dontDistribute super."Catana";
+  "ChannelT" = dontDistribute super."ChannelT";
   "Chart" = doDistribute super."Chart_1_3_3";
   "Chart-cairo" = dontDistribute super."Chart-cairo";
   "Chart-diagrams" = doDistribute super."Chart-diagrams_1_3_3";

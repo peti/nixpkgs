@@ -163,6 +163,7 @@ self: super: {
   "Cartesian" = dontDistribute super."Cartesian";
   "Cascade" = dontDistribute super."Cascade";
   "Catana" = dontDistribute super."Catana";
+  "ChannelT" = dontDistribute super."ChannelT";
   "Chart-cairo" = doDistribute super."Chart-cairo_1_5_1";
   "Chart-gtk" = dontDistribute super."Chart-gtk";
   "Chart-simple" = dontDistribute super."Chart-simple";
