@@ -1083,6 +1083,7 @@ self: super: {
   "aeson-applicative" = dontDistribute super."aeson-applicative";
   "aeson-bson" = dontDistribute super."aeson-bson";
   "aeson-diff" = dontDistribute super."aeson-diff";
+  "aeson-extra" = doDistribute super."aeson-extra_0_3_0_0";
   "aeson-filthy" = dontDistribute super."aeson-filthy";
   "aeson-iproute" = dontDistribute super."aeson-iproute";
   "aeson-lens" = dontDistribute super."aeson-lens";
@@ -1526,6 +1527,7 @@ self: super: {
   "blaze-html-truncate" = dontDistribute super."blaze-html-truncate";
   "blaze-json" = dontDistribute super."blaze-json";
   "blaze-shields" = dontDistribute super."blaze-shields";
+  "blaze-svg" = doDistribute super."blaze-svg_0_3_5";
   "blaze-textual-native" = dontDistribute super."blaze-textual-native";
   "blazeMarker" = dontDistribute super."blazeMarker";
   "blink1" = dontDistribute super."blink1";
@@ -3997,6 +3999,7 @@ self: super: {
   "hscassandra" = dontDistribute super."hscassandra";
   "hscd" = dontDistribute super."hscd";
   "hsclock" = dontDistribute super."hsclock";
+  "hscolour" = doDistribute super."hscolour_1_23";
   "hscope" = dontDistribute super."hscope";
   "hscrtmpl" = dontDistribute super."hscrtmpl";
   "hscuid" = dontDistribute super."hscuid";
@@ -5020,6 +5023,7 @@ self: super: {
   "modulespection" = dontDistribute super."modulespection";
   "modulo" = dontDistribute super."modulo";
   "moe" = dontDistribute super."moe";
+  "moesocks" = doDistribute super."moesocks_1_0_0_40";
   "mohws" = dontDistribute super."mohws";
   "monad-abort-fd" = dontDistribute super."monad-abort-fd";
   "monad-atom" = dontDistribute super."monad-atom";
@@ -5606,6 +5610,7 @@ self: super: {
   "piet" = dontDistribute super."piet";
   "piki" = dontDistribute super."piki";
   "pinboard" = dontDistribute super."pinboard";
+  "pinchot" = doDistribute super."pinchot_0_6_0_0";
   "pipe-enumerator" = dontDistribute super."pipe-enumerator";
   "pipeclip" = dontDistribute super."pipeclip";
   "pipes" = doDistribute super."pipes_4_1_7";
@@ -5829,6 +5834,7 @@ self: super: {
   "pseudo-trie" = dontDistribute super."pseudo-trie";
   "pseudomacros" = dontDistribute super."pseudomacros";
   "pub" = dontDistribute super."pub";
+  "publicsuffix" = doDistribute super."publicsuffix_0_20151212";
   "publicsuffixlist" = dontDistribute super."publicsuffixlist";
   "publicsuffixlistcreate" = dontDistribute super."publicsuffixlistcreate";
   "pubnub" = dontDistribute super."pubnub";
@@ -6099,6 +6105,7 @@ self: super: {
   "resource-pool-catchio" = dontDistribute super."resource-pool-catchio";
   "resource-pool-monad" = dontDistribute super."resource-pool-monad";
   "resource-simple" = dontDistribute super."resource-simple";
+  "resourcet" = doDistribute super."resourcet_1_1_7";
   "respond" = dontDistribute super."respond";
   "rest-example" = dontDistribute super."rest-example";
   "restful-snap" = dontDistribute super."restful-snap";
