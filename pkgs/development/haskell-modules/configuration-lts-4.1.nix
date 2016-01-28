@@ -6748,6 +6748,7 @@ self: super: {
   "string-convert" = dontDistribute super."string-convert";
   "string-quote" = dontDistribute super."string-quote";
   "string-similarity" = dontDistribute super."string-similarity";
+  "string-typelits" = dontDistribute super."string-typelits";
   "stringlike" = dontDistribute super."stringlike";
   "stringprep" = dontDistribute super."stringprep";
   "strings" = dontDistribute super."strings";

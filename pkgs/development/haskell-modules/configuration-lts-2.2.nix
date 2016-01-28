@@ -7639,6 +7639,7 @@ self: super: {
   "string-qq" = dontDistribute super."string-qq";
   "string-quote" = dontDistribute super."string-quote";
   "string-similarity" = dontDistribute super."string-similarity";
+  "string-typelits" = dontDistribute super."string-typelits";
   "stringlike" = dontDistribute super."stringlike";
   "strings" = dontDistribute super."strings";
   "stringtable-atom" = dontDistribute super."stringtable-atom";
