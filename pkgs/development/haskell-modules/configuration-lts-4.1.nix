@@ -1309,6 +1309,7 @@ self: super: {
   "authenticate-ldap" = dontDistribute super."authenticate-ldap";
   "authinfo-hs" = dontDistribute super."authinfo-hs";
   "authoring" = dontDistribute super."authoring";
+  "autoexporter" = dontDistribute super."autoexporter";
   "autonix-deps" = dontDistribute super."autonix-deps";
   "autonix-deps-kf5" = dontDistribute super."autonix-deps-kf5";
   "autoproc" = dontDistribute super."autoproc";
@@ -4902,6 +4903,7 @@ self: super: {
   "logger" = dontDistribute super."logger";
   "logging" = dontDistribute super."logging";
   "logging-effect" = dontDistribute super."logging-effect";
+  "logging-facade" = doDistribute super."logging-facade_0_1_0";
   "logging-facade-journald" = dontDistribute super."logging-facade-journald";
   "logic-TPTP" = dontDistribute super."logic-TPTP";
   "logic-classes" = dontDistribute super."logic-classes";
@@ -5297,6 +5299,7 @@ self: super: {
   "mvc-updates" = dontDistribute super."mvc-updates";
   "mvclient" = dontDistribute super."mvclient";
   "mwc-probability" = doDistribute super."mwc-probability_1_0_2";
+  "mwc-random" = doDistribute super."mwc-random_0_13_3_2";
   "mwc-random-monad" = dontDistribute super."mwc-random-monad";
   "myTestlll" = dontDistribute super."myTestlll";
   "mybitcoin-sci" = dontDistribute super."mybitcoin-sci";
@@ -5770,6 +5773,7 @@ self: super: {
   "pipes-files" = dontDistribute super."pipes-files";
   "pipes-http" = dontDistribute super."pipes-http";
   "pipes-interleave" = dontDistribute super."pipes-interleave";
+  "pipes-key-value-csv" = dontDistribute super."pipes-key-value-csv";
   "pipes-network-tls" = dontDistribute super."pipes-network-tls";
   "pipes-p2p" = dontDistribute super."pipes-p2p";
   "pipes-p2p-examples" = dontDistribute super."pipes-p2p-examples";
@@ -5946,6 +5950,7 @@ self: super: {
   "procrastinating-variable" = dontDistribute super."procrastinating-variable";
   "procstat" = dontDistribute super."procstat";
   "proctest" = dontDistribute super."proctest";
+  "product-profunctors" = doDistribute super."product-profunctors_0_6_3_1";
   "prof2dot" = dontDistribute super."prof2dot";
   "prof2pretty" = dontDistribute super."prof2pretty";
   "profiteur" = dontDistribute super."profiteur";
@@ -7515,6 +7520,7 @@ self: super: {
   "ureader" = dontDistribute super."ureader";
   "urembed" = dontDistribute super."urembed";
   "uri" = dontDistribute super."uri";
+  "uri-bytestring" = doDistribute super."uri-bytestring_0_1_9_2";
   "uri-conduit" = dontDistribute super."uri-conduit";
   "uri-enumerator" = dontDistribute super."uri-enumerator";
   "uri-enumerator-file" = dontDistribute super."uri-enumerator-file";
@@ -7645,6 +7651,7 @@ self: super: {
   "vty-menu" = dontDistribute super."vty-menu";
   "vty-ui" = dontDistribute super."vty-ui";
   "vty-ui-extras" = dontDistribute super."vty-ui-extras";
+  "vulkan" = dontDistribute super."vulkan";
   "waddle" = dontDistribute super."waddle";
   "wai" = doDistribute super."wai_3_0_5_0";
   "wai-accept-language" = dontDistribute super."wai-accept-language";

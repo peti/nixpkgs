@@ -1424,6 +1424,7 @@ self: super: {
   "authinfo-hs" = dontDistribute super."authinfo-hs";
   "authoring" = dontDistribute super."authoring";
   "auto-update" = doDistribute super."auto-update_0_1_2_2";
+  "autoexporter" = dontDistribute super."autoexporter";
   "autonix-deps" = dontDistribute super."autonix-deps";
   "autonix-deps-kf5" = dontDistribute super."autonix-deps-kf5";
   "autoproc" = dontDistribute super."autoproc";
@@ -5248,6 +5249,7 @@ self: super: {
   "logger" = dontDistribute super."logger";
   "logging" = dontDistribute super."logging";
   "logging-effect" = dontDistribute super."logging-effect";
+  "logging-facade" = doDistribute super."logging-facade_0_1_0";
   "logging-facade-journald" = dontDistribute super."logging-facade-journald";
   "logic-TPTP" = dontDistribute super."logic-TPTP";
   "logic-classes" = dontDistribute super."logic-classes";
@@ -5665,6 +5667,7 @@ self: super: {
   "mvc-updates" = dontDistribute super."mvc-updates";
   "mvclient" = dontDistribute super."mvclient";
   "mwc-probability" = dontDistribute super."mwc-probability";
+  "mwc-random" = doDistribute super."mwc-random_0_13_3_2";
   "mwc-random-monad" = dontDistribute super."mwc-random-monad";
   "myTestlll" = dontDistribute super."myTestlll";
   "mybitcoin-sci" = dontDistribute super."mybitcoin-sci";
@@ -6182,6 +6185,7 @@ self: super: {
   "pipes-files" = dontDistribute super."pipes-files";
   "pipes-group" = doDistribute super."pipes-group_1_0_2";
   "pipes-interleave" = dontDistribute super."pipes-interleave";
+  "pipes-key-value-csv" = dontDistribute super."pipes-key-value-csv";
   "pipes-mongodb" = dontDistribute super."pipes-mongodb";
   "pipes-network-tls" = dontDistribute super."pipes-network-tls";
   "pipes-p2p" = dontDistribute super."pipes-p2p";
@@ -8211,6 +8215,7 @@ self: super: {
   "vty-menu" = dontDistribute super."vty-menu";
   "vty-ui" = dontDistribute super."vty-ui";
   "vty-ui-extras" = dontDistribute super."vty-ui-extras";
+  "vulkan" = dontDistribute super."vulkan";
   "waddle" = dontDistribute super."waddle";
   "wai" = doDistribute super."wai_3_0_3_0";
   "wai-accept-language" = dontDistribute super."wai-accept-language";
