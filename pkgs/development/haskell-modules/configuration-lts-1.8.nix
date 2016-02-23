@@ -7609,6 +7609,7 @@ self: super: {
   "socket-io" = dontDistribute super."socket-io";
   "socket-sctp" = dontDistribute super."socket-sctp";
   "socketio" = dontDistribute super."socketio";
+  "socketson" = dontDistribute super."socketson";
   "soegtk" = dontDistribute super."soegtk";
   "sonic-visualiser" = dontDistribute super."sonic-visualiser";
   "sophia" = dontDistribute super."sophia";

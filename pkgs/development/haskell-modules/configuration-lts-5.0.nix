@@ -1664,6 +1664,7 @@ self: super: {
   "cabocha" = dontDistribute super."cabocha";
   "cached-io" = dontDistribute super."cached-io";
   "cached-traversable" = dontDistribute super."cached-traversable";
+  "cacophony" = doDistribute super."cacophony_0_4_0";
   "caf" = dontDistribute super."caf";
   "cafeteria-prelude" = dontDistribute super."cafeteria-prelude";
   "caffegraph" = dontDistribute super."caffegraph";
@@ -4939,6 +4940,7 @@ self: super: {
   "medium-sdk-haskell" = dontDistribute super."medium-sdk-haskell";
   "meep" = dontDistribute super."meep";
   "mega-sdist" = dontDistribute super."mega-sdist";
+  "megaparsec" = doDistribute super."megaparsec_4_3_0";
   "meldable-heap" = dontDistribute super."meldable-heap";
   "melody" = dontDistribute super."melody";
   "memcache" = dontDistribute super."memcache";
@@ -5281,6 +5283,7 @@ self: super: {
   "network-transport" = doDistribute super."network-transport_0_4_2_0";
   "network-transport-amqp" = dontDistribute super."network-transport-amqp";
   "network-transport-inmemory" = dontDistribute super."network-transport-inmemory";
+  "network-transport-tcp" = doDistribute super."network-transport-tcp_0_4_2";
   "network-transport-tests" = doDistribute super."network-transport-tests_0_2_2_0";
   "network-uri-static" = dontDistribute super."network-uri-static";
   "network-wai-router" = dontDistribute super."network-wai-router";
@@ -5630,6 +5633,7 @@ self: super: {
   "pipes-async" = dontDistribute super."pipes-async";
   "pipes-attoparsec-streaming" = dontDistribute super."pipes-attoparsec-streaming";
   "pipes-binary" = doDistribute super."pipes-binary_0_4_0_5";
+  "pipes-cacophony" = doDistribute super."pipes-cacophony_0_1_3";
   "pipes-cellular" = dontDistribute super."pipes-cellular";
   "pipes-cellular-csv" = dontDistribute super."pipes-cellular-csv";
   "pipes-cereal" = dontDistribute super."pipes-cereal";
@@ -6603,6 +6607,7 @@ self: super: {
   "socket-io" = doDistribute super."socket-io_1_3_4";
   "socket-sctp" = dontDistribute super."socket-sctp";
   "socketio" = dontDistribute super."socketio";
+  "socketson" = dontDistribute super."socketson";
   "soegtk" = dontDistribute super."soegtk";
   "sonic-visualiser" = dontDistribute super."sonic-visualiser";
   "sophia" = dontDistribute super."sophia";
@@ -7439,6 +7444,7 @@ self: super: {
   "vimeta" = dontDistribute super."vimeta";
   "vimus" = dontDistribute super."vimus";
   "vintage-basic" = dontDistribute super."vintage-basic";
+  "vinyl" = doDistribute super."vinyl_0_5_1";
   "vinyl-gl" = dontDistribute super."vinyl-gl";
   "vinyl-json" = dontDistribute super."vinyl-json";
   "vinyl-utils" = dontDistribute super."vinyl-utils";

@@ -5959,6 +5959,7 @@ self: super: {
   "network-transport-amqp" = dontDistribute super."network-transport-amqp";
   "network-transport-composed" = dontDistribute super."network-transport-composed";
   "network-transport-inmemory" = dontDistribute super."network-transport-inmemory";
+  "network-transport-tcp" = doDistribute super."network-transport-tcp_0_4_2";
   "network-transport-tests" = doDistribute super."network-transport-tests_0_2_2_0";
   "network-transport-zeromq" = dontDistribute super."network-transport-zeromq";
   "network-uri-static" = dontDistribute super."network-uri-static";
@@ -7467,6 +7468,7 @@ self: super: {
   "socket-io" = dontDistribute super."socket-io";
   "socket-sctp" = dontDistribute super."socket-sctp";
   "socketio" = dontDistribute super."socketio";
+  "socketson" = dontDistribute super."socketson";
   "soegtk" = dontDistribute super."soegtk";
   "sonic-visualiser" = dontDistribute super."sonic-visualiser";
   "sophia" = dontDistribute super."sophia";
