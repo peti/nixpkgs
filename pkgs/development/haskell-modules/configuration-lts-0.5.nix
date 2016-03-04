@@ -1783,6 +1783,7 @@ self: super: {
   "board-games" = dontDistribute super."board-games";
   "bogre-banana" = dontDistribute super."bogre-banana";
   "bond" = dontDistribute super."bond";
+  "bond-haskell-compiler" = dontDistribute super."bond-haskell-compiler";
   "boolean-list" = dontDistribute super."boolean-list";
   "boolean-normal-forms" = dontDistribute super."boolean-normal-forms";
   "boolexpr" = dontDistribute super."boolexpr";
@@ -5034,6 +5035,7 @@ self: super: {
   "irc-conduit" = dontDistribute super."irc-conduit";
   "irc-core" = dontDistribute super."irc-core";
   "irc-ctcp" = dontDistribute super."irc-ctcp";
+  "irc-dcc" = dontDistribute super."irc-dcc";
   "irc-fun-bot" = dontDistribute super."irc-fun-bot";
   "irc-fun-client" = dontDistribute super."irc-fun-client";
   "irc-fun-color" = dontDistribute super."irc-fun-color";
@@ -6803,6 +6805,7 @@ self: super: {
   "pseudo-boolean" = dontDistribute super."pseudo-boolean";
   "pseudo-trie" = dontDistribute super."pseudo-trie";
   "pseudomacros" = dontDistribute super."pseudomacros";
+  "psql-helpers" = dontDistribute super."psql-helpers";
   "psqueues" = dontDistribute super."psqueues";
   "pub" = dontDistribute super."pub";
   "publicsuffix" = dontDistribute super."publicsuffix";
@@ -8030,6 +8033,7 @@ self: super: {
   "tar" = doDistribute super."tar_0_4_0_1";
   "target" = dontDistribute super."target";
   "task" = dontDistribute super."task";
+  "task-distribution" = dontDistribute super."task-distribution";
   "taskpool" = dontDistribute super."taskpool";
   "tasty" = doDistribute super."tasty_0_10_1";
   "tasty-ant-xml" = doDistribute super."tasty-ant-xml_1_0_1";
@@ -9067,6 +9071,7 @@ self: super: {
   "yesod-fay" = doDistribute super."yesod-fay_0_7_0";
   "yesod-form" = doDistribute super."yesod-form_1_4_3";
   "yesod-form-json" = dontDistribute super."yesod-form-json";
+  "yesod-form-richtext" = dontDistribute super."yesod-form-richtext";
   "yesod-gitrepo" = doDistribute super."yesod-gitrepo_0_1_1_0";
   "yesod-gitrev" = dontDistribute super."yesod-gitrev";
   "yesod-goodies" = dontDistribute super."yesod-goodies";
@@ -9159,6 +9164,7 @@ self: super: {
   "zeroth" = dontDistribute super."zeroth";
   "zigbee-znet25" = dontDistribute super."zigbee-znet25";
   "zim-parser" = dontDistribute super."zim-parser";
+  "zip" = dontDistribute super."zip";
   "zip-archive" = doDistribute super."zip-archive_0_2_3_5";
   "zip-conduit" = dontDistribute super."zip-conduit";
   "zipedit" = dontDistribute super."zipedit";
