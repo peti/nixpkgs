@@ -17,6 +17,8 @@ self: super: {
   # Apply NixOS-specific patches.
   ghc-paths = appendPatch super.ghc-paths ./patches/ghc-paths-nix.patch;
 
+  zip-archive = super.zip-archive.override { zip = pkgs.zip; };
+
   # Break infinite recursions.
   clock = dontCheck super.clock;
   Dust-crypto = dontCheck super.Dust-crypto;
