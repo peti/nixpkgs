@@ -2419,6 +2419,7 @@ self: super: {
   "cryptol" = dontDistribute super."cryptol";
   "cryptonite" = dontDistribute super."cryptonite";
   "cryptonite-conduit" = dontDistribute super."cryptonite-conduit";
+  "cryptonite-openssl" = dontDistribute super."cryptonite-openssl";
   "cryptsy-api" = dontDistribute super."cryptsy-api";
   "crystalfontz" = dontDistribute super."crystalfontz";
   "cse-ghc-plugin" = dontDistribute super."cse-ghc-plugin";
