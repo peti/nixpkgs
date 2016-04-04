@@ -3876,6 +3876,7 @@ self: super: {
   "happybara" = dontDistribute super."happybara";
   "happybara-webkit" = dontDistribute super."happybara-webkit";
   "happybara-webkit-server" = dontDistribute super."happybara-webkit-server";
+  "hapstone" = dontDistribute super."hapstone";
   "har" = dontDistribute super."har";
   "harchive" = dontDistribute super."harchive";
   "hardware-edsl" = dontDistribute super."hardware-edsl";
