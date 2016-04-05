@@ -960,4 +960,8 @@ self: super: {
     hint = self.hint_0_4_3;
   };
 
+  # https://github.com/danidiaz/pipes-transduce/issues/2
+  pipes-transduce = super.pipes-transduce.override {
+    foldl = self.foldl_1_1_6;
+  };
 }
