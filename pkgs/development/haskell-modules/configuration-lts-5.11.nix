@@ -3757,6 +3757,7 @@ self: super: {
   "hedis-tags" = dontDistribute super."hedis-tags";
   "hedn" = dontDistribute super."hedn";
   "hein" = dontDistribute super."hein";
+  "heist" = doDistribute super."heist_0_14_1_2";
   "heist-aeson" = dontDistribute super."heist-aeson";
   "heist-async" = dontDistribute super."heist-async";
   "helics" = dontDistribute super."helics";
