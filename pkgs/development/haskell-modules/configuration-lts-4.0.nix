@@ -6339,6 +6339,7 @@ self: super: {
   "quiver-cell" = dontDistribute super."quiver-cell";
   "quiver-csv" = dontDistribute super."quiver-csv";
   "quiver-enumerator" = dontDistribute super."quiver-enumerator";
+  "quiver-groups" = dontDistribute super."quiver-groups";
   "quiver-http" = dontDistribute super."quiver-http";
   "quoridor-hs" = dontDistribute super."quoridor-hs";
   "qux" = dontDistribute super."qux";
