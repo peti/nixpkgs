@@ -8091,6 +8091,7 @@ self: super: {
   "system-inotify" = dontDistribute super."system-inotify";
   "system-lifted" = dontDistribute super."system-lifted";
   "system-random-effect" = dontDistribute super."system-random-effect";
+  "system-test" = dontDistribute super."system-test";
   "system-time-monotonic" = dontDistribute super."system-time-monotonic";
   "system-util" = dontDistribute super."system-util";
   "system-uuid" = dontDistribute super."system-uuid";
@@ -8591,6 +8592,7 @@ self: super: {
   "unbounded-delays-units" = dontDistribute super."unbounded-delays-units";
   "unboxed-containers" = dontDistribute super."unboxed-containers";
   "unbreak" = dontDistribute super."unbreak";
+  "uncertain" = dontDistribute super."uncertain";
   "unexceptionalio" = dontDistribute super."unexceptionalio";
   "unfoldable" = dontDistribute super."unfoldable";
   "unfoldable-restricted" = dontDistribute super."unfoldable-restricted";
