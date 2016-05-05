@@ -6630,6 +6630,7 @@ self: super: {
   "proteaaudio" = dontDistribute super."proteaaudio";
   "protobuf" = dontDistribute super."protobuf";
   "protobuf-native" = dontDistribute super."protobuf-native";
+  "protobuf-simple" = dontDistribute super."protobuf-simple";
   "protocol-buffers" = doDistribute super."protocol-buffers_2_1_6";
   "protocol-buffers-descriptor" = doDistribute super."protocol-buffers-descriptor_2_1_6";
   "protocol-buffers-descriptor-fork" = dontDistribute super."protocol-buffers-descriptor-fork";
