@@ -4828,6 +4828,7 @@ self: super: {
   "hw-bits" = dontDistribute super."hw-bits";
   "hw-conduit" = dontDistribute super."hw-conduit";
   "hw-diagnostics" = dontDistribute super."hw-diagnostics";
+  "hw-json" = dontDistribute super."hw-json";
   "hw-parser" = dontDistribute super."hw-parser";
   "hw-prim" = dontDistribute super."hw-prim";
   "hw-rankselect" = dontDistribute super."hw-rankselect";
