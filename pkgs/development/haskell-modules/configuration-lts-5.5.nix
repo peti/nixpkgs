@@ -4133,6 +4133,7 @@ self: super: {
   "hothasktags" = dontDistribute super."hothasktags";
   "hotswap" = dontDistribute super."hotswap";
   "hourglass-fuzzy-parsing" = dontDistribute super."hourglass-fuzzy-parsing";
+  "houseman" = dontDistribute super."houseman";
   "hp2any-core" = dontDistribute super."hp2any-core";
   "hp2any-graph" = dontDistribute super."hp2any-graph";
   "hp2any-manager" = dontDistribute super."hp2any-manager";

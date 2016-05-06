@@ -4371,6 +4371,7 @@ self: super: {
   "hotswap" = dontDistribute super."hotswap";
   "hourglass" = doDistribute super."hourglass_0_2_9";
   "hourglass-fuzzy-parsing" = dontDistribute super."hourglass-fuzzy-parsing";
+  "houseman" = dontDistribute super."houseman";
   "hp2any-core" = dontDistribute super."hp2any-core";
   "hp2any-graph" = dontDistribute super."hp2any-graph";
   "hp2any-manager" = dontDistribute super."hp2any-manager";
