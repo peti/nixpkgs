@@ -728,6 +728,7 @@ self: super: {
   "ObjectIO" = dontDistribute super."ObjectIO";
   "ObjectName" = dontDistribute super."ObjectName";
   "Obsidian" = dontDistribute super."Obsidian";
+  "Octree" = doDistribute super."Octree_0_5_4_2";
   "OddWord" = dontDistribute super."OddWord";
   "Omega" = dontDistribute super."Omega";
   "OpenAFP" = dontDistribute super."OpenAFP";
@@ -1452,6 +1453,7 @@ self: super: {
   "authenticate" = doDistribute super."authenticate_1_3_2_11";
   "authenticate-kerberos" = dontDistribute super."authenticate-kerberos";
   "authenticate-ldap" = dontDistribute super."authenticate-ldap";
+  "authenticate-oauth" = doDistribute super."authenticate-oauth_1_5_1_1";
   "authinfo-hs" = dontDistribute super."authinfo-hs";
   "authoring" = dontDistribute super."authoring";
   "auto-update" = doDistribute super."auto-update_0_1_2_2";
@@ -1809,6 +1811,7 @@ self: super: {
   "bytestring-csv" = dontDistribute super."bytestring-csv";
   "bytestring-delta" = dontDistribute super."bytestring-delta";
   "bytestring-from" = dontDistribute super."bytestring-from";
+  "bytestring-handle" = doDistribute super."bytestring-handle_0_1_0_3";
   "bytestring-nums" = dontDistribute super."bytestring-nums";
   "bytestring-plain" = dontDistribute super."bytestring-plain";
   "bytestring-rematch" = dontDistribute super."bytestring-rematch";
@@ -3777,6 +3780,7 @@ self: super: {
   "hLLVM" = dontDistribute super."hLLVM";
   "hMollom" = dontDistribute super."hMollom";
   "hOpenPGP" = dontDistribute super."hOpenPGP";
+  "hPDB" = doDistribute super."hPDB_1_2_0_4";
   "hPDB-examples" = dontDistribute super."hPDB-examples";
   "hPushover" = dontDistribute super."hPushover";
   "hR" = dontDistribute super."hR";
@@ -5032,6 +5036,7 @@ self: super: {
   "js-good-parts" = dontDistribute super."js-good-parts";
   "js-jquery" = doDistribute super."js-jquery_1_11_3";
   "jsaddle" = dontDistribute super."jsaddle";
+  "jsaddle-dom" = dontDistribute super."jsaddle-dom";
   "jsaddle-hello" = dontDistribute super."jsaddle-hello";
   "jsc" = dontDistribute super."jsc";
   "jsmw" = dontDistribute super."jsmw";
@@ -5829,6 +5834,7 @@ self: super: {
   "mtgoxapi" = dontDistribute super."mtgoxapi";
   "mtl-c" = dontDistribute super."mtl-c";
   "mtl-evil-instances" = dontDistribute super."mtl-evil-instances";
+  "mtl-prelude" = doDistribute super."mtl-prelude_2_0_2";
   "mtl-tf" = dontDistribute super."mtl-tf";
   "mtl-unleashed" = dontDistribute super."mtl-unleashed";
   "mtlparse" = dontDistribute super."mtlparse";
@@ -6387,6 +6393,7 @@ self: super: {
   "pgp-wordlist" = dontDistribute super."pgp-wordlist";
   "pgsql-simple" = dontDistribute super."pgsql-simple";
   "pgstream" = dontDistribute super."pgstream";
+  "phantom-state" = doDistribute super."phantom-state_0_2_0_2";
   "phasechange" = dontDistribute super."phasechange";
   "phizzle" = dontDistribute super."phizzle";
   "phoityne" = dontDistribute super."phoityne";
@@ -7018,6 +7025,7 @@ self: super: {
   "rest-gen" = doDistribute super."rest-gen_0_17_1_3";
   "rest-happstack" = doDistribute super."rest-happstack_0_2_10_8";
   "rest-snap" = doDistribute super."rest-snap_0_1_17_18";
+  "rest-types" = doDistribute super."rest-types_1_14_0_1";
   "rest-wai" = doDistribute super."rest-wai_0_1_0_8";
   "restful-snap" = dontDistribute super."restful-snap";
   "restricted-workers" = dontDistribute super."restricted-workers";

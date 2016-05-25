@@ -741,6 +741,7 @@ self: super: {
   "ObjectIO" = dontDistribute super."ObjectIO";
   "ObjectName" = doDistribute super."ObjectName_1_1_0_0";
   "Obsidian" = dontDistribute super."Obsidian";
+  "Octree" = doDistribute super."Octree_0_5_4_2";
   "OddWord" = dontDistribute super."OddWord";
   "Omega" = dontDistribute super."Omega";
   "OpenAFP" = dontDistribute super."OpenAFP";
@@ -1495,6 +1496,7 @@ self: super: {
   "authenticate" = doDistribute super."authenticate_1_3_2_11";
   "authenticate-kerberos" = dontDistribute super."authenticate-kerberos";
   "authenticate-ldap" = dontDistribute super."authenticate-ldap";
+  "authenticate-oauth" = doDistribute super."authenticate-oauth_1_5_1_1";
   "authinfo-hs" = dontDistribute super."authinfo-hs";
   "authoring" = dontDistribute super."authoring";
   "auto" = dontDistribute super."auto";
@@ -3891,6 +3893,7 @@ self: super: {
   "hLLVM" = dontDistribute super."hLLVM";
   "hMollom" = dontDistribute super."hMollom";
   "hOpenPGP" = doDistribute super."hOpenPGP_2_0";
+  "hPDB" = doDistribute super."hPDB_1_2_0_4";
   "hPushover" = dontDistribute super."hPushover";
   "hR" = dontDistribute super."hR";
   "hRESP" = dontDistribute super."hRESP";
@@ -5178,6 +5181,7 @@ self: super: {
   "js-good-parts" = dontDistribute super."js-good-parts";
   "js-jquery" = doDistribute super."js-jquery_1_11_3";
   "jsaddle" = dontDistribute super."jsaddle";
+  "jsaddle-dom" = dontDistribute super."jsaddle-dom";
   "jsaddle-hello" = dontDistribute super."jsaddle-hello";
   "jsc" = dontDistribute super."jsc";
   "jsmw" = dontDistribute super."jsmw";
@@ -6591,6 +6595,7 @@ self: super: {
   "pgp-wordlist" = dontDistribute super."pgp-wordlist";
   "pgsql-simple" = dontDistribute super."pgsql-simple";
   "pgstream" = dontDistribute super."pgstream";
+  "phantom-state" = doDistribute super."phantom-state_0_2_0_2";
   "phasechange" = dontDistribute super."phasechange";
   "phash" = dontDistribute super."phash";
   "phizzle" = dontDistribute super."phizzle";
