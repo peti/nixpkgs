@@ -582,6 +582,7 @@ self: super: {
   "LRU" = dontDistribute super."LRU";
   "LTree" = dontDistribute super."LTree";
   "LambdaCalculator" = dontDistribute super."LambdaCalculator";
+  "LambdaDB" = dontDistribute super."LambdaDB";
   "LambdaHack" = dontDistribute super."LambdaHack";
   "LambdaINet" = dontDistribute super."LambdaINet";
   "LambdaNet" = dontDistribute super."LambdaNet";
