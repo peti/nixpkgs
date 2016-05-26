@@ -6715,6 +6715,7 @@ self: super: {
   "store" = dontDistribute super."store";
   "str" = dontDistribute super."str";
   "stratum-tool" = dontDistribute super."stratum-tool";
+  "stratux" = dontDistribute super."stratux";
   "stream" = dontDistribute super."stream";
   "stream-fusion" = dontDistribute super."stream-fusion";
   "stream-monad" = dontDistribute super."stream-monad";

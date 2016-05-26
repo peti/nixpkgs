@@ -7717,6 +7717,7 @@ self: super: {
   "str" = dontDistribute super."str";
   "stratosphere" = dontDistribute super."stratosphere";
   "stratum-tool" = dontDistribute super."stratum-tool";
+  "stratux" = dontDistribute super."stratux";
   "stream" = dontDistribute super."stream";
   "stream-fusion" = dontDistribute super."stream-fusion";
   "stream-monad" = dontDistribute super."stream-monad";
