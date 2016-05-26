@@ -241,6 +241,7 @@ self: super: {
   "DefendTheKing" = dontDistribute super."DefendTheKing";
   "DescriptiveKeys" = dontDistribute super."DescriptiveKeys";
   "Dflow" = dontDistribute super."Dflow";
+  "Diff" = doDistribute super."Diff_0_3_2";
   "DifferenceLogic" = dontDistribute super."DifferenceLogic";
   "DifferentialEvolution" = dontDistribute super."DifferentialEvolution";
   "Digit" = dontDistribute super."Digit";
@@ -1014,6 +1015,7 @@ self: super: {
   "Webrexp" = dontDistribute super."Webrexp";
   "Wheb" = dontDistribute super."Wheb";
   "WikimediaParser" = dontDistribute super."WikimediaParser";
+  "Win32" = doDistribute super."Win32_2_3_1_0";
   "Win32-dhcp-server" = dontDistribute super."Win32-dhcp-server";
   "Win32-errors" = dontDistribute super."Win32-errors";
   "Win32-extras" = dontDistribute super."Win32-extras";
@@ -1740,6 +1742,7 @@ self: super: {
   "bloodhound" = doDistribute super."bloodhound_0_7_0_1";
   "bloodhound-amazonka-auth" = dontDistribute super."bloodhound-amazonka-auth";
   "bloomfilter-redis" = dontDistribute super."bloomfilter-redis";
+  "blosum" = dontDistribute super."blosum";
   "bloxorz" = dontDistribute super."bloxorz";
   "blubber" = dontDistribute super."blubber";
   "blubber-server" = dontDistribute super."blubber-server";
@@ -1815,6 +1818,7 @@ self: super: {
   "bytes" = doDistribute super."bytes_0_15_0_1";
   "byteset" = dontDistribute super."byteset";
   "bytestring-arbitrary" = dontDistribute super."bytestring-arbitrary";
+  "bytestring-builder" = doDistribute super."bytestring-builder_0_10_6_0_0";
   "bytestring-class" = dontDistribute super."bytestring-class";
   "bytestring-csv" = dontDistribute super."bytestring-csv";
   "bytestring-delta" = dontDistribute super."bytestring-delta";
@@ -2152,6 +2156,7 @@ self: super: {
   "commsec" = dontDistribute super."commsec";
   "commsec-keyexchange" = dontDistribute super."commsec-keyexchange";
   "commutative" = dontDistribute super."commutative";
+  "comonad" = doDistribute super."comonad_4_2_7_2";
   "comonad-extras" = dontDistribute super."comonad-extras";
   "comonad-random" = dontDistribute super."comonad-random";
   "compact-map" = dontDistribute super."compact-map";
@@ -2455,6 +2460,7 @@ self: super: {
   "data-concurrent-queue" = dontDistribute super."data-concurrent-queue";
   "data-construction" = dontDistribute super."data-construction";
   "data-cycle" = dontDistribute super."data-cycle";
+  "data-default" = doDistribute super."data-default_0_5_3";
   "data-default-extra" = dontDistribute super."data-default-extra";
   "data-default-generics" = dontDistribute super."data-default-generics";
   "data-default-instances-base" = doDistribute super."data-default-instances-base_0_0_1";
@@ -2490,6 +2496,7 @@ self: super: {
   "data-lens" = dontDistribute super."data-lens";
   "data-lens-fd" = dontDistribute super."data-lens-fd";
   "data-lens-ixset" = dontDistribute super."data-lens-ixset";
+  "data-lens-light" = doDistribute super."data-lens-light_0_1_2_1";
   "data-lens-template" = dontDistribute super."data-lens-template";
   "data-list-sequences" = dontDistribute super."data-list-sequences";
   "data-map-multikey" = dontDistribute super."data-map-multikey";
@@ -2582,6 +2589,7 @@ self: super: {
   "deepcontrol" = dontDistribute super."deepcontrol";
   "deeplearning-hs" = dontDistribute super."deeplearning-hs";
   "deepseq-bounded" = dontDistribute super."deepseq-bounded";
+  "deepseq-generics" = doDistribute super."deepseq-generics_0_1_1_2";
   "deepseq-magic" = dontDistribute super."deepseq-magic";
   "deepseq-th" = dontDistribute super."deepseq-th";
   "deepzoom" = dontDistribute super."deepzoom";
@@ -3858,7 +3866,9 @@ self: super: {
   "hactor" = dontDistribute super."hactor";
   "hactors" = dontDistribute super."hactors";
   "haddock" = dontDistribute super."haddock";
+  "haddock-api" = doDistribute super."haddock-api_2_16_1";
   "haddock-leksah" = dontDistribute super."haddock-leksah";
+  "haddock-library" = doDistribute super."haddock-library_1_2_1";
   "haddocset" = dontDistribute super."haddocset";
   "hadoop-formats" = dontDistribute super."hadoop-formats";
   "hadoop-rpc" = dontDistribute super."hadoop-rpc";
@@ -5542,6 +5552,7 @@ self: super: {
   "macbeth-lib" = dontDistribute super."macbeth-lib";
   "maccatcher" = dontDistribute super."maccatcher";
   "machinecell" = dontDistribute super."machinecell";
+  "machines" = doDistribute super."machines_0_5_1";
   "machines-binary" = dontDistribute super."machines-binary";
   "machines-directory" = doDistribute super."machines-directory_0_2_0_6";
   "machines-io" = doDistribute super."machines-io_0_2_0_6";
@@ -6527,6 +6538,7 @@ self: super: {
   "pngload-fixed" = dontDistribute super."pngload-fixed";
   "pnm" = dontDistribute super."pnm";
   "pocket-dns" = dontDistribute super."pocket-dns";
+  "pointed" = doDistribute super."pointed_4_2_0_2";
   "pointedlist" = dontDistribute super."pointedlist";
   "pointfree" = dontDistribute super."pointfree";
   "pointful" = dontDistribute super."pointful";
@@ -8240,6 +8252,7 @@ self: super: {
   "transf" = dontDistribute super."transf";
   "transformations" = dontDistribute super."transformations";
   "transformers-abort" = dontDistribute super."transformers-abort";
+  "transformers-compat" = doDistribute super."transformers-compat_0_4_0_4";
   "transformers-compose" = dontDistribute super."transformers-compose";
   "transformers-convert" = dontDistribute super."transformers-convert";
   "transformers-eff" = dontDistribute super."transformers-eff";
@@ -8251,6 +8264,7 @@ self: super: {
   "transient-universe" = dontDistribute super."transient-universe";
   "translatable-intset" = dontDistribute super."translatable-intset";
   "translate" = dontDistribute super."translate";
+  "traverse-with-class" = doDistribute super."traverse-with-class_0_2_0_3";
   "travis" = dontDistribute super."travis";
   "travis-meta-yaml" = dontDistribute super."travis-meta-yaml";
   "trawl" = dontDistribute super."trawl";
@@ -8802,6 +8816,7 @@ self: super: {
   "word24" = dontDistribute super."word24";
   "wordcloud" = dontDistribute super."wordcloud";
   "wordexp" = dontDistribute super."wordexp";
+  "wordpass" = doDistribute super."wordpass_1_0_0_4";
   "words" = dontDistribute super."words";
   "wordsearch" = dontDistribute super."wordsearch";
   "wordsetdiff" = dontDistribute super."wordsetdiff";
@@ -9079,6 +9094,7 @@ self: super: {
   "zigbee-znet25" = dontDistribute super."zigbee-znet25";
   "zim-parser" = dontDistribute super."zim-parser";
   "zip" = dontDistribute super."zip";
+  "zip-archive" = doDistribute super."zip-archive_0_2_3_7";
   "zip-conduit" = dontDistribute super."zip-conduit";
   "zipedit" = dontDistribute super."zipedit";
   "zipkin" = dontDistribute super."zipkin";

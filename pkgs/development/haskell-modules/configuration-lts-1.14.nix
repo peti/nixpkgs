@@ -1810,6 +1810,7 @@ self: super: {
   "bloodhound-amazonka-auth" = dontDistribute super."bloodhound-amazonka-auth";
   "bloomfilter" = dontDistribute super."bloomfilter";
   "bloomfilter-redis" = dontDistribute super."bloomfilter-redis";
+  "blosum" = dontDistribute super."blosum";
   "bloxorz" = dontDistribute super."bloxorz";
   "blubber" = dontDistribute super."blubber";
   "blubber-server" = dontDistribute super."blubber-server";
@@ -2548,6 +2549,7 @@ self: super: {
   "data-concurrent-queue" = dontDistribute super."data-concurrent-queue";
   "data-construction" = dontDistribute super."data-construction";
   "data-cycle" = dontDistribute super."data-cycle";
+  "data-default" = doDistribute super."data-default_0_5_3";
   "data-default-extra" = dontDistribute super."data-default-extra";
   "data-default-generics" = dontDistribute super."data-default-generics";
   "data-default-instances-base" = doDistribute super."data-default-instances-base_0_0_1";
@@ -2584,6 +2586,7 @@ self: super: {
   "data-lens" = dontDistribute super."data-lens";
   "data-lens-fd" = dontDistribute super."data-lens-fd";
   "data-lens-ixset" = dontDistribute super."data-lens-ixset";
+  "data-lens-light" = doDistribute super."data-lens-light_0_1_2_1";
   "data-lens-template" = dontDistribute super."data-lens-template";
   "data-list-sequences" = dontDistribute super."data-list-sequences";
   "data-map-multikey" = dontDistribute super."data-map-multikey";
@@ -2679,6 +2682,7 @@ self: super: {
   "deepcontrol" = dontDistribute super."deepcontrol";
   "deeplearning-hs" = dontDistribute super."deeplearning-hs";
   "deepseq-bounded" = dontDistribute super."deepseq-bounded";
+  "deepseq-generics" = doDistribute super."deepseq-generics_0_1_1_2";
   "deepseq-magic" = dontDistribute super."deepseq-magic";
   "deepseq-th" = dontDistribute super."deepseq-th";
   "deepzoom" = dontDistribute super."deepzoom";
@@ -8572,6 +8576,7 @@ self: super: {
   "transient-universe" = dontDistribute super."transient-universe";
   "translatable-intset" = dontDistribute super."translatable-intset";
   "translate" = dontDistribute super."translate";
+  "traverse-with-class" = doDistribute super."traverse-with-class_0_2_0_3";
   "travis" = dontDistribute super."travis";
   "travis-meta-yaml" = dontDistribute super."travis-meta-yaml";
   "trawl" = dontDistribute super."trawl";
@@ -9433,6 +9438,7 @@ self: super: {
   "zigbee-znet25" = dontDistribute super."zigbee-znet25";
   "zim-parser" = dontDistribute super."zim-parser";
   "zip" = dontDistribute super."zip";
+  "zip-archive" = doDistribute super."zip-archive_0_2_3_7";
   "zip-conduit" = dontDistribute super."zip-conduit";
   "zipedit" = dontDistribute super."zipedit";
   "zipkin" = dontDistribute super."zipkin";
