@@ -7538,6 +7538,7 @@ self: super: {
   "stratosphere" = dontDistribute super."stratosphere";
   "stratum-tool" = dontDistribute super."stratum-tool";
   "stratux" = dontDistribute super."stratux";
+  "stratux-types" = dontDistribute super."stratux-types";
   "stream" = dontDistribute super."stream";
   "stream-fusion" = dontDistribute super."stream-fusion";
   "stream-monad" = dontDistribute super."stream-monad";

@@ -6789,6 +6789,7 @@ self: super: {
   "str" = dontDistribute super."str";
   "stratum-tool" = dontDistribute super."stratum-tool";
   "stratux" = dontDistribute super."stratux";
+  "stratux-types" = dontDistribute super."stratux-types";
   "stream" = dontDistribute super."stream";
   "stream-fusion" = dontDistribute super."stream-fusion";
   "stream-monad" = dontDistribute super."stream-monad";
@@ -7545,6 +7546,7 @@ self: super: {
   "wai-routes" = doDistribute super."wai-routes_0_9_7";
   "wai-session-alt" = dontDistribute super."wai-session-alt";
   "wai-session-clientsession" = dontDistribute super."wai-session-clientsession";
+  "wai-session-postgresql" = doDistribute super."wai-session-postgresql_0_2_0_5";
   "wai-session-tokyocabinet" = dontDistribute super."wai-session-tokyocabinet";
   "wai-static-cache" = dontDistribute super."wai-static-cache";
   "wai-static-pages" = dontDistribute super."wai-static-pages";
