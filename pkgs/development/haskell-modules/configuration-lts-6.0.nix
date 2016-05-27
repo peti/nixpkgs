@@ -1615,6 +1615,7 @@ self: super: {
   "bytestring-rematch" = dontDistribute super."bytestring-rematch";
   "bytestring-short" = dontDistribute super."bytestring-short";
   "bytestring-show" = dontDistribute super."bytestring-show";
+  "bytestring-tree-builder" = doDistribute super."bytestring-tree-builder_0_2_6";
   "bytestringparser" = dontDistribute super."bytestringparser";
   "bytestringparser-temporary" = dontDistribute super."bytestringparser-temporary";
   "bytestringreadp" = dontDistribute super."bytestringreadp";
@@ -2664,6 +2665,7 @@ self: super: {
   "extended-reals" = dontDistribute super."extended-reals";
   "extensible" = dontDistribute super."extensible";
   "extensible-data" = dontDistribute super."extensible-data";
+  "extensible-effects" = doDistribute super."extensible-effects_1_11_0_3";
   "external-sort" = dontDistribute super."external-sort";
   "extra" = doDistribute super."extra_1_4_7";
   "extractelf" = dontDistribute super."extractelf";

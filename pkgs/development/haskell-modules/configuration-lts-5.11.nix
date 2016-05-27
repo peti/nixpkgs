@@ -2893,6 +2893,7 @@ self: super: {
   "extended-reals" = dontDistribute super."extended-reals";
   "extensible" = dontDistribute super."extensible";
   "extensible-data" = dontDistribute super."extensible-data";
+  "extensible-effects" = doDistribute super."extensible-effects_1_11_0_3";
   "external-sort" = dontDistribute super."external-sort";
   "extra" = doDistribute super."extra_1_4_3";
   "extractelf" = dontDistribute super."extractelf";
