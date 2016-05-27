@@ -5761,6 +5761,7 @@ self: super: {
   "network-rpca" = dontDistribute super."network-rpca";
   "network-server" = dontDistribute super."network-server";
   "network-service" = dontDistribute super."network-service";
+  "network-simple" = doDistribute super."network-simple_0_4_0_4";
   "network-simple-sockaddr" = dontDistribute super."network-simple-sockaddr";
   "network-simple-tls" = dontDistribute super."network-simple-tls";
   "network-socket-options" = dontDistribute super."network-socket-options";
