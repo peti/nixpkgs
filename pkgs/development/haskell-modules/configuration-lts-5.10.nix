@@ -6245,6 +6245,7 @@ self: super: {
   "pretty-error" = dontDistribute super."pretty-error";
   "pretty-hex" = dontDistribute super."pretty-hex";
   "pretty-ncols" = dontDistribute super."pretty-ncols";
+  "pretty-show" = doDistribute super."pretty-show_1_6_9";
   "pretty-sop" = dontDistribute super."pretty-sop";
   "pretty-tree" = dontDistribute super."pretty-tree";
   "prettyFunctionComposing" = dontDistribute super."prettyFunctionComposing";
@@ -6296,6 +6297,7 @@ self: super: {
   "prometheus" = dontDistribute super."prometheus";
   "promise" = dontDistribute super."promise";
   "promises" = dontDistribute super."promises";
+  "prompt" = doDistribute super."prompt_0_1_1_0";
   "propane" = dontDistribute super."propane";
   "propellor" = dontDistribute super."propellor";
   "properties" = dontDistribute super."properties";

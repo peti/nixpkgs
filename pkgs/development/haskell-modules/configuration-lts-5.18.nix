@@ -2829,6 +2829,7 @@ self: super: {
   "extensible" = dontDistribute super."extensible";
   "extensible-data" = dontDistribute super."extensible-data";
   "external-sort" = dontDistribute super."external-sort";
+  "extra" = doDistribute super."extra_1_4_7";
   "extractelf" = dontDistribute super."extractelf";
   "ez-couch" = dontDistribute super."ez-couch";
   "faceted" = dontDistribute super."faceted";
@@ -6102,6 +6103,7 @@ self: super: {
   "pretty-compact" = dontDistribute super."pretty-compact";
   "pretty-error" = dontDistribute super."pretty-error";
   "pretty-ncols" = dontDistribute super."pretty-ncols";
+  "pretty-show" = doDistribute super."pretty-show_1_6_9";
   "pretty-sop" = dontDistribute super."pretty-sop";
   "pretty-tree" = dontDistribute super."pretty-tree";
   "prettyFunctionComposing" = dontDistribute super."prettyFunctionComposing";
@@ -6153,6 +6155,7 @@ self: super: {
   "prometheus" = dontDistribute super."prometheus";
   "promise" = dontDistribute super."promise";
   "promises" = dontDistribute super."promises";
+  "prompt" = doDistribute super."prompt_0_1_1_0";
   "propane" = dontDistribute super."propane";
   "propellor" = dontDistribute super."propellor";
   "properties" = dontDistribute super."properties";
