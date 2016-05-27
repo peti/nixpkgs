@@ -5889,6 +5889,7 @@ self: super: {
   "pseudo-trie" = dontDistribute super."pseudo-trie";
   "pseudomacros" = dontDistribute super."pseudomacros";
   "pub" = dontDistribute super."pub";
+  "publicsuffix" = doDistribute super."publicsuffix_0_20160522";
   "publicsuffixlist" = dontDistribute super."publicsuffixlist";
   "publicsuffixlistcreate" = dontDistribute super."publicsuffixlistcreate";
   "pubnub" = dontDistribute super."pubnub";
