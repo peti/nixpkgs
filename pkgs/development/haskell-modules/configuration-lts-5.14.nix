@@ -3919,6 +3919,7 @@ self: super: {
   "hdis86" = dontDistribute super."hdis86";
   "hdiscount" = dontDistribute super."hdiscount";
   "hdm" = dontDistribute super."hdm";
+  "hdo" = dontDistribute super."hdo";
   "hdocs" = doDistribute super."hdocs_0_4_4_2";
   "hdph" = dontDistribute super."hdph";
   "hdph-closure" = dontDistribute super."hdph-closure";
