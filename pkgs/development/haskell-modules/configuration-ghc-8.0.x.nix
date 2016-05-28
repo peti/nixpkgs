@@ -165,4 +165,5 @@ self: super: {
 
   # MonadCatchIO-transformers = doJailbreak super.MonadCatchIO-transformers;
 
+  pandoc = doJailbreak super.pandoc;
 }
