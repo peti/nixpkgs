@@ -5570,6 +5570,7 @@ self: super: {
   "pcg-random" = dontDistribute super."pcg-random";
   "pcre-less" = dontDistribute super."pcre-less";
   "pcre-light-extra" = dontDistribute super."pcre-light-extra";
+  "pcre-utils" = doDistribute super."pcre-utils_0_1_8";
   "pdf-toolbox-viewer" = dontDistribute super."pdf-toolbox-viewer";
   "pdf2line" = dontDistribute super."pdf2line";
   "pdfsplit" = dontDistribute super."pdfsplit";
