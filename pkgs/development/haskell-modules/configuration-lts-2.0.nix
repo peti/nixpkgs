@@ -3073,6 +3073,7 @@ self: super: {
   "error-util" = dontDistribute super."error-util";
   "errorcall-eq-instance" = doDistribute super."errorcall-eq-instance_0_2_0";
   "errors" = doDistribute super."errors_1_4_7";
+  "ersatz" = doDistribute super."ersatz_0_3";
   "ersatz-toysat" = dontDistribute super."ersatz-toysat";
   "ert" = dontDistribute super."ert";
   "esotericbot" = dontDistribute super."esotericbot";
