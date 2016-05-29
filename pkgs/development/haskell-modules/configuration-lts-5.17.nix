@@ -5023,6 +5023,7 @@ self: super: {
   "lindenmayer" = dontDistribute super."lindenmayer";
   "line-break" = dontDistribute super."line-break";
   "line2pdf" = dontDistribute super."line2pdf";
+  "linear" = doDistribute super."linear_1_20_4";
   "linear-algebra-cblas" = dontDistribute super."linear-algebra-cblas";
   "linear-circuit" = dontDistribute super."linear-circuit";
   "linear-grammar" = dontDistribute super."linear-grammar";
