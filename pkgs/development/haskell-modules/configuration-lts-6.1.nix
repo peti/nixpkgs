@@ -2760,6 +2760,7 @@ self: super: {
   "flamingra" = dontDistribute super."flamingra";
   "flat-maybe" = dontDistribute super."flat-maybe";
   "flat-tex" = dontDistribute super."flat-tex";
+  "flexible-defaults" = doDistribute super."flexible-defaults_0_0_1_1";
   "flexible-time" = dontDistribute super."flexible-time";
   "flexible-unlit" = dontDistribute super."flexible-unlit";
   "flexiwrap" = dontDistribute super."flexiwrap";
