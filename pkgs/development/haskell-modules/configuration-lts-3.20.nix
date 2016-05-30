@@ -4560,6 +4560,7 @@ self: super: {
   "hslackbuilder" = dontDistribute super."hslackbuilder";
   "hslibsvm" = dontDistribute super."hslibsvm";
   "hslinks" = dontDistribute super."hslinks";
+  "hslogger" = doDistribute super."hslogger_1_2_9";
   "hslogger-reader" = dontDistribute super."hslogger-reader";
   "hslogger-template" = dontDistribute super."hslogger-template";
   "hslogger4j" = dontDistribute super."hslogger4j";
@@ -4646,7 +4647,6 @@ self: super: {
   "hsx-xhtml" = dontDistribute super."hsx-xhtml";
   "hsx2hs" = dontDistribute super."hsx2hs";
   "hsyscall" = dontDistribute super."hsyscall";
-  "hsyslog" = doDistribute super."hsyslog_2_0";
   "hszephyr" = dontDistribute super."hszephyr";
   "htaglib" = dontDistribute super."htaglib";
   "htags" = dontDistribute super."htags";

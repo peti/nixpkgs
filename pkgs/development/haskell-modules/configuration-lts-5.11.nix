@@ -4358,6 +4358,7 @@ self: super: {
   "hslackbuilder" = dontDistribute super."hslackbuilder";
   "hslibsvm" = dontDistribute super."hslibsvm";
   "hslinks" = dontDistribute super."hslinks";
+  "hslogger" = doDistribute super."hslogger_1_2_9";
   "hslogger-reader" = dontDistribute super."hslogger-reader";
   "hslogger-template" = dontDistribute super."hslogger-template";
   "hslogger4j" = dontDistribute super."hslogger4j";
@@ -4428,7 +4429,6 @@ self: super: {
   "hsx" = dontDistribute super."hsx";
   "hsx-xhtml" = dontDistribute super."hsx-xhtml";
   "hsyscall" = dontDistribute super."hsyscall";
-  "hsyslog" = doDistribute super."hsyslog_2_0";
   "hszephyr" = dontDistribute super."hszephyr";
   "htaglib" = doDistribute super."htaglib_1_0_2";
   "htags" = dontDistribute super."htags";
@@ -7639,6 +7639,7 @@ self: super: {
   "themplate" = dontDistribute super."themplate";
   "theoremquest" = dontDistribute super."theoremquest";
   "theoremquest-client" = dontDistribute super."theoremquest-client";
+  "these" = doDistribute super."these_0_6_2_1";
   "thespian" = dontDistribute super."thespian";
   "theta-functions" = dontDistribute super."theta-functions";
   "thih" = dontDistribute super."thih";

@@ -619,6 +619,7 @@ self: super: {
   "Michelangelo" = dontDistribute super."Michelangelo";
   "MicrosoftTranslator" = dontDistribute super."MicrosoftTranslator";
   "MiniAgda" = dontDistribute super."MiniAgda";
+  "MissingH" = doDistribute super."MissingH_1_3_0_2";
   "MissingK" = dontDistribute super."MissingK";
   "MissingM" = dontDistribute super."MissingM";
   "MissingPy" = dontDistribute super."MissingPy";
@@ -1912,7 +1913,6 @@ self: super: {
   "compact-socket" = dontDistribute super."compact-socket";
   "compact-string" = dontDistribute super."compact-string";
   "compact-string-fix" = dontDistribute super."compact-string-fix";
-  "compactmap" = doDistribute super."compactmap_0_1_4";
   "compare-type" = dontDistribute super."compare-type";
   "compdata-automata" = dontDistribute super."compdata-automata";
   "compdata-dags" = dontDistribute super."compdata-dags";
@@ -3854,6 +3854,7 @@ self: super: {
   "hlibBladeRF" = dontDistribute super."hlibBladeRF";
   "hlibev" = dontDistribute super."hlibev";
   "hlibfam" = dontDistribute super."hlibfam";
+  "hlint" = doDistribute super."hlint_1_9_32";
   "hlogger" = dontDistribute super."hlogger";
   "hlongurl" = dontDistribute super."hlongurl";
   "hls" = dontDistribute super."hls";
@@ -4073,6 +4074,7 @@ self: super: {
   "hslackbuilder" = dontDistribute super."hslackbuilder";
   "hslibsvm" = dontDistribute super."hslibsvm";
   "hslinks" = dontDistribute super."hslinks";
+  "hslogger" = doDistribute super."hslogger_1_2_9";
   "hslogger-reader" = dontDistribute super."hslogger-reader";
   "hslogger-template" = dontDistribute super."hslogger-template";
   "hslogger4j" = dontDistribute super."hslogger4j";
@@ -4142,7 +4144,6 @@ self: super: {
   "hsx" = dontDistribute super."hsx";
   "hsx-xhtml" = dontDistribute super."hsx-xhtml";
   "hsyscall" = dontDistribute super."hsyscall";
-  "hsyslog" = doDistribute super."hsyslog_2_0";
   "hszephyr" = dontDistribute super."hszephyr";
   "htags" = dontDistribute super."htags";
   "htar" = dontDistribute super."htar";
@@ -7130,6 +7131,7 @@ self: super: {
   "themplate" = dontDistribute super."themplate";
   "theoremquest" = dontDistribute super."theoremquest";
   "theoremquest-client" = dontDistribute super."theoremquest-client";
+  "these" = doDistribute super."these_0_6_2_1";
   "thespian" = dontDistribute super."thespian";
   "theta-functions" = dontDistribute super."theta-functions";
   "thih" = dontDistribute super."thih";

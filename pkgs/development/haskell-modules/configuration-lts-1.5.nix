@@ -4838,7 +4838,6 @@ self: super: {
   "hsx-xhtml" = dontDistribute super."hsx-xhtml";
   "hsx2hs" = dontDistribute super."hsx2hs";
   "hsyscall" = dontDistribute super."hsyscall";
-  "hsyslog" = doDistribute super."hsyslog_2_0";
   "hszephyr" = dontDistribute super."hszephyr";
   "htaglib" = dontDistribute super."htaglib";
   "htags" = dontDistribute super."htags";

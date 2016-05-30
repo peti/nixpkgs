@@ -627,6 +627,7 @@ self: super: {
   "Michelangelo" = dontDistribute super."Michelangelo";
   "MicrosoftTranslator" = dontDistribute super."MicrosoftTranslator";
   "MiniAgda" = dontDistribute super."MiniAgda";
+  "MissingH" = doDistribute super."MissingH_1_3_0_2";
   "MissingK" = dontDistribute super."MissingK";
   "MissingM" = dontDistribute super."MissingM";
   "MissingPy" = dontDistribute super."MissingPy";
@@ -4279,6 +4280,7 @@ self: super: {
   "hslackbuilder" = dontDistribute super."hslackbuilder";
   "hslibsvm" = dontDistribute super."hslibsvm";
   "hslinks" = dontDistribute super."hslinks";
+  "hslogger" = doDistribute super."hslogger_1_2_9";
   "hslogger-reader" = dontDistribute super."hslogger-reader";
   "hslogger-template" = dontDistribute super."hslogger-template";
   "hslogger4j" = dontDistribute super."hslogger4j";
@@ -4349,7 +4351,6 @@ self: super: {
   "hsx" = dontDistribute super."hsx";
   "hsx-xhtml" = dontDistribute super."hsx-xhtml";
   "hsyscall" = dontDistribute super."hsyscall";
-  "hsyslog" = doDistribute super."hsyslog_2_0";
   "hszephyr" = dontDistribute super."hszephyr";
   "htags" = dontDistribute super."htags";
   "htar" = dontDistribute super."htar";
@@ -7486,6 +7487,7 @@ self: super: {
   "themplate" = dontDistribute super."themplate";
   "theoremquest" = dontDistribute super."theoremquest";
   "theoremquest-client" = dontDistribute super."theoremquest-client";
+  "these" = doDistribute super."these_0_6_2_1";
   "thespian" = dontDistribute super."thespian";
   "theta-functions" = dontDistribute super."theta-functions";
   "thih" = dontDistribute super."thih";
