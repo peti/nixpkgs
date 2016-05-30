@@ -1912,6 +1912,7 @@ self: super: {
   "compact-socket" = dontDistribute super."compact-socket";
   "compact-string" = dontDistribute super."compact-string";
   "compact-string-fix" = dontDistribute super."compact-string-fix";
+  "compactmap" = doDistribute super."compactmap_0_1_4";
   "compare-type" = dontDistribute super."compare-type";
   "compdata-automata" = dontDistribute super."compdata-automata";
   "compdata-dags" = dontDistribute super."compdata-dags";
@@ -7592,6 +7593,7 @@ self: super: {
   "wai-lens" = dontDistribute super."wai-lens";
   "wai-lite" = dontDistribute super."wai-lite";
   "wai-logger-prefork" = dontDistribute super."wai-logger-prefork";
+  "wai-make-assets" = dontDistribute super."wai-make-assets";
   "wai-middleware-cache" = dontDistribute super."wai-middleware-cache";
   "wai-middleware-cache-redis" = dontDistribute super."wai-middleware-cache-redis";
   "wai-middleware-catch" = dontDistribute super."wai-middleware-catch";

@@ -8905,6 +8905,7 @@ self: super: {
   "wai-lite" = dontDistribute super."wai-lite";
   "wai-logger" = doDistribute super."wai-logger_2_2_4_1";
   "wai-logger-prefork" = dontDistribute super."wai-logger-prefork";
+  "wai-make-assets" = dontDistribute super."wai-make-assets";
   "wai-middleware-cache" = dontDistribute super."wai-middleware-cache";
   "wai-middleware-cache-redis" = dontDistribute super."wai-middleware-cache-redis";
   "wai-middleware-caching" = dontDistribute super."wai-middleware-caching";
