@@ -586,7 +586,7 @@ self: super: {
   test-sandbox-compose = dontCheck super.test-sandbox-compose;
 
   # https://github.com/jgm/pandoc/issues/2709
-  pandoc = disableSharedExecutables super.pandoc;
+  pandoc = doJailbreak (disableSharedExecutables super.pandoc);
 
   # Tests attempt to use NPM to install from the network into
   # /homeless-shelter. Disabled.
@@ -644,8 +644,8 @@ self: super: {
 
   # Override the obsolete version from Hackage with our more up-to-date copy.
   cabal2nix = self.callPackage ../tools/haskell/cabal2nix/cabal2nix.nix {};
-  hackage2nix = self.callPackage ../tools/haskell/cabal2nix/hackage2nix.nix {};
-  distribution-nixpkgs = self.callPackage ../tools/haskell/cabal2nix/distribution-nixpkgs.nix {};
+  hackage2nix = self.callPackage ../tools/haskell/cabal2nix/hackage2nix.nix { deepseq-generics = self.deepseq-generics_0_1_1_2; };
+  distribution-nixpkgs = self.callPackage ../tools/haskell/cabal2nix/distribution-nixpkgs.nix { deepseq-generics = self.deepseq-generics_0_1_1_2; };
 
   # https://github.com/ndmitchell/shake/issues/206
   # https://github.com/ndmitchell/shake/issues/267
@@ -754,7 +754,7 @@ self: super: {
   lens-aeson = dontCheck super.lens-aeson;
 
   # Byte-compile elisp code for Emacs.
-  ghc-mod = overrideCabal super.ghc-mod (drv: {
+  ghc-mod = overrideCabal (super.ghc-mod.override { cabal-helper = self.cabal-helper_0_6_3_1; }) (drv: {
     preCheck = "export HOME=$TMPDIR";
     testToolDepends = drv.testToolDepends or [] ++ [self.cabal-install];
     doCheck = false;            # https://github.com/kazu-yamamoto/ghc-mod/issues/335
@@ -1005,4 +1005,6 @@ self: super: {
   yi-solarized = markBroken super.yi-solarized;
   yi-spolsky = markBroken super.yi-spolsky;
 
+  # gtk2hs-buildtools must have Cabal 1.24
+  gtk2hs-buildtools = super.gtk2hs-buildtools.override { Cabal = self.Cabal_1_24_0_0; };
 }
