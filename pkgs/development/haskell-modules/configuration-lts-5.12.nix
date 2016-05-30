@@ -2063,6 +2063,7 @@ self: super: {
   "compact-string-fix" = dontDistribute super."compact-string-fix";
   "compactmap" = doDistribute super."compactmap_0_1_3_1";
   "compare-type" = dontDistribute super."compare-type";
+  "compdata" = doDistribute super."compdata_0_10";
   "compdata-automata" = dontDistribute super."compdata-automata";
   "compdata-dags" = dontDistribute super."compdata-dags";
   "compdata-param" = dontDistribute super."compdata-param";
