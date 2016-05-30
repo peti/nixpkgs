@@ -6173,6 +6173,7 @@ self: super: {
   "only" = dontDistribute super."only";
   "onu-course" = dontDistribute super."onu-course";
   "oo-prototypes" = dontDistribute super."oo-prototypes";
+  "opaleye" = doDistribute super."opaleye_0_4_2_0";
   "opaleye-classy" = dontDistribute super."opaleye-classy";
   "opaleye-sqlite" = dontDistribute super."opaleye-sqlite";
   "opaleye-trans" = dontDistribute super."opaleye-trans";

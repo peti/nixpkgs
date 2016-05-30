@@ -5836,6 +5836,7 @@ self: super: {
   "oneormore" = dontDistribute super."oneormore";
   "only" = dontDistribute super."only";
   "onu-course" = dontDistribute super."onu-course";
+  "opaleye" = doDistribute super."opaleye_0_4_2_0";
   "opaleye-classy" = dontDistribute super."opaleye-classy";
   "opaleye-sqlite" = dontDistribute super."opaleye-sqlite";
   "opaleye-trans" = dontDistribute super."opaleye-trans";
