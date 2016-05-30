@@ -6157,6 +6157,7 @@ self: super: {
   "restricted-workers" = dontDistribute super."restricted-workers";
   "restyle" = dontDistribute super."restyle";
   "resumable-exceptions" = dontDistribute super."resumable-exceptions";
+  "rethinkdb-client-driver" = doDistribute super."rethinkdb-client-driver_0_0_22";
   "rethinkdb-model" = dontDistribute super."rethinkdb-model";
   "rethinkdb-wereHamster" = dontDistribute super."rethinkdb-wereHamster";
   "retryer" = dontDistribute super."retryer";

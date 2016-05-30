@@ -5221,6 +5221,15 @@ self: super: {
   "lambdaBase" = dontDistribute super."lambdaBase";
   "lambdaFeed" = dontDistribute super."lambdaFeed";
   "lambdaLit" = dontDistribute super."lambdaLit";
+  "lambdabot" = doDistribute super."lambdabot_5_0_3";
+  "lambdabot-core" = doDistribute super."lambdabot-core_5_0_3";
+  "lambdabot-haskell-plugins" = doDistribute super."lambdabot-haskell-plugins_5_0_3";
+  "lambdabot-irc-plugins" = doDistribute super."lambdabot-irc-plugins_5_0_3";
+  "lambdabot-misc-plugins" = doDistribute super."lambdabot-misc-plugins_5_0_1";
+  "lambdabot-novelty-plugins" = doDistribute super."lambdabot-novelty-plugins_5_0_3";
+  "lambdabot-reference-plugins" = doDistribute super."lambdabot-reference-plugins_5_0_3";
+  "lambdabot-social-plugins" = doDistribute super."lambdabot-social-plugins_5_0_1";
+  "lambdabot-trusted" = doDistribute super."lambdabot-trusted_5_0_2_1";
   "lambdabot-utils" = dontDistribute super."lambdabot-utils";
   "lambdacat" = dontDistribute super."lambdacat";
   "lambdacms-core" = dontDistribute super."lambdacms-core";

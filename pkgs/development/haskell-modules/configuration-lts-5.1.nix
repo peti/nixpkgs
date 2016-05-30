@@ -6771,6 +6771,7 @@ self: super: {
   "restyle" = dontDistribute super."restyle";
   "resumable-exceptions" = dontDistribute super."resumable-exceptions";
   "rethinkdb" = doDistribute super."rethinkdb_2_2_0_2";
+  "rethinkdb-client-driver" = doDistribute super."rethinkdb-client-driver_0_0_22";
   "rethinkdb-model" = dontDistribute super."rethinkdb-model";
   "rethinkdb-wereHamster" = dontDistribute super."rethinkdb-wereHamster";
   "retry" = doDistribute super."retry_0_7_1";
