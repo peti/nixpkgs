@@ -59,6 +59,7 @@ extra-packages:
   - transformers == 0.4.3.*             # the latest version isn't supported by mtl yet
   - vector < 0.10.10                    # newer versions don't work with GHC 6.12.3
   - zlib < 0.6                          # newer versions break cabal-install
+  - hint < 0.5.0                        # required for mueval-0.9.1.1.2
 
 package-maintainers:
   peti:
