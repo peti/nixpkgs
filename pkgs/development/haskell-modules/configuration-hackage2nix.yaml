@@ -2043,7 +2043,9 @@ package-maintainers:
     - git-annex
     - hackage-db
     - hledger
+    - hledger-diff
     - hledger-interest
+    - hledger-irr
     - hledger-ui
     - hledger-web
     - hopenssl
