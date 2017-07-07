@@ -1,5 +1,5 @@
 { stdenv, fetchurl, ghc, pkgconfig, glibcLocales, coreutils, gnugrep, gnused
-, jailbreak-cabal, hscolour, cpphs, nodejs, lib
+, jailbreak-cabal, hscolour, cpphs, nodejs, lib, removeReferencesTo
 }: let isCross = (ghc.cross or null) != null; in
 
 { pname
@@ -108,6 +108,8 @@ let
 
   defaultConfigureFlags = [
     "--verbose" "--prefix=$out" "--libdir=\\$prefix/lib/\\$compiler" "--libsubdir=\\$pkgid"
+    "--datadir=$data/share/${ghc.name}"
+    "--docdir=$doc/share/doc"
     "--with-gcc=$CC" # Clang won't work without that extra information.
     "--package-db=$packageConfDir"
     (optionalString (enableSharedExecutables && stdenv.isLinux) "--ghc-option=-optl=-Wl,-rpath=$out/lib/${ghc.name}/${pname}-${version}")
@@ -144,7 +146,7 @@ let
   allPkgconfigDepends = pkgconfigDepends ++ libraryPkgconfigDepends ++ executablePkgconfigDepends ++
                         optionals doCheck testPkgconfigDepends ++ optionals withBenchmarkDepends benchmarkPkgconfigDepends;
 
-  nativeBuildInputs = setupHaskellDepends ++ buildTools ++ libraryToolDepends ++ executableToolDepends;
+  nativeBuildInputs = setupHaskellDepends ++ buildTools ++ libraryToolDepends ++ executableToolDepends ++ [ removeReferencesTo ];
   propagatedBuildInputs = buildDepends ++ libraryHaskellDepends ++ executableHaskellDepends;
   otherBuildInputs = extraLibraries ++ librarySystemDepends ++ executableSystemDepends ++
                      optionals (allPkgconfigDepends != []) ([pkgconfig] ++ allPkgconfigDepends) ++
@@ -172,6 +174,9 @@ assert allPkgconfigDepends != [] -> pkgconfig != null;
 
 stdenv.mkDerivation ({
   name = "${pname}-${version}";
+
+  outputs = [ "out" "data" "doc" ];
+  setOutputFlags = false;
 
   pos = builtins.unsafeGetAttrPos "pname" args;
 
@@ -322,6 +327,11 @@ stdenv.mkDerivation ({
         install_name_tool -add_rpath "$out/lib/ghc-${ghc.version}/${pname}-${version}" "$exe"
       done
     ''}
+
+    for x in $doc/share/doc/html/src/*.html; do
+      remove-references-to -t $out $x
+    done
+    mkdir -p $data
 
     runHook postInstall
   '';
