@@ -331,7 +331,7 @@ stdenv.mkDerivation ({
     for x in $doc/share/doc/html/src/*.html; do
       remove-references-to -t $out $x
     done
-    mkdir -p $data
+    mkdir -p $data $doc
 
     runHook postInstall
   '';
