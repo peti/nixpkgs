@@ -736,7 +736,8 @@ self: super: {
       };
     in overrideCabal super.servant (old: {
       postInstall = old.postInstall or "" + ''
-        ln -s ${docs} $out/share/doc/servant
+        mkdir -p $doc/share/
+        ln -s ${docs} $doc/share/doc
       '';
     });
 
