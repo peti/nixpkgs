@@ -5953,7 +5953,6 @@ with pkgs;
           overrides = self: super: {
             binary = lib.dontCheck self.binary_0_8_5_1;
             cheapskate = self.cheapskate_0_1_1;
-            idris = self.idris_1_1_1;
             parsers = lib.dontCheck super.parsers;
             semigroupoids = lib.dontCheck super.semigroupoids;
             trifecta = lib.dontCheck super.trifecta;

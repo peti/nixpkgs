@@ -731,9 +731,7 @@ self: super: {
   });
 
   # test suite cannot find its own "idris" binary
-  idris = doJailbreak (dontCheck super.idris);
-
-  idris_1_1_1 = overrideCabal (doJailbreak (dontCheck super.idris_1_1_1)) (drv: {
+  idris = overrideCabal (doJailbreak (dontCheck super.idris)) (drv: {
     # The standard libraries are compiled separately
     configureFlags = (drv.configureFlags or []) ++ [ "-fexeconly" ];
   });
