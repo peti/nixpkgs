@@ -8811,6 +8811,8 @@ with pkgs;
 
   c-blosc = callPackage ../development/libraries/c-blosc { };
 
+  cachix = haskell.lib.justStaticExecutables haskellPackages.cachix;
+
   capnproto = callPackage ../development/libraries/capnproto { };
 
   ndn-cxx = callPackage ../development/libraries/ndn-cxx { };
