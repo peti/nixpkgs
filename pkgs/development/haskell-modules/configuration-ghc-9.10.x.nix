@@ -1,10 +1,13 @@
 { pkgs, haskellLib }:
 
+with haskellLib;
+
 let
   inherit (pkgs) lib;
 in
 
 self: super: {
+
   llvmPackages = lib.dontRecurseIntoAttrs self.ghc.llvmPackages;
 
   # Disable GHC core libraries
@@ -49,4 +52,11 @@ self: super: {
   transformers = null;
   unix = null;
   xhtml = null;
+
+  # version updates to fix build errors
+  th-abstraction = self.th-abstraction_0_7_0_0;
+  tar = self.tar_0_6_2_0;
+  indexed-traversable = self.indexed-traversable_0_1_4;
+  primitive = dontCheck super.primitive_0_9_0_0;    # dontCheck resolves in infinite recursion while evaluating cabal-install
+
 }
